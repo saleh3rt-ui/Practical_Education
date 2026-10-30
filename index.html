@@ -1,3 +1,4 @@
+
 <write_to_file>
 <path>التربية_العملية_التفاعلي_الكامل.html</path>
 <content><!DOCTYPE html>
@@ -22,11 +23,9 @@ html{scroll-behavior:smooth;font-size:var(--fs)}
 body{font-family:'Tajawal',sans-serif;background:linear-gradient(160deg,#0f1b3d 0%,#1a2f5e 30%,#1e3a6e 60%,#0f1b3d 100%);color:var(--char);line-height:1.75;min-height:100vh;font-size:1rem}
 body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at 20% 20%,rgba(37,99,235,.06) 0%,transparent 50%),radial-gradient(ellipse at 80% 80%,rgba(201,168,76,.04) 0%,transparent 50%);pointer-events:none;z-index:0}
 
-/* ICON SYSTEM */
 .ico{display:inline-flex;align-items:center;justify-content:center;width:1.25rem;height:1.25rem;color:var(--ico-color);font-style:normal;font-weight:400;font-size:.8125rem;flex-shrink:0}
 .ico-box{width:2rem;height:2rem;border-radius:.5rem;background:linear-gradient(135deg,var(--blue),var(--sky));display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .ico-box .ico{color:#fff;width:auto;height:auto;font-size:.875rem}
-/* HEADER */
 .hdr{position:sticky;top:0;z-index:1000;background:rgba(15,27,61,.96);backdrop-filter:blur(20px);border-bottom:1px solid rgba(201,168,76,.25)}
 .hdr-top{display:flex;align-items:center;justify-content:space-between;padding:.375rem 1rem;border-bottom:1px solid rgba(255,255,255,.06)}
 .logo{display:flex;align-items:center;gap:.5625rem}
@@ -37,7 +36,6 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .hbtn{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);color:#fff;padding:.25rem .75rem;border-radius:50px;cursor:pointer;font-family:'Tajawal';font-size:.8em;transition:var(--tr);display:flex;align-items:center;gap:.25rem}
 .hbtn:hover,.hbtn.on{background:var(--gold);color:var(--navy);border-color:var(--gold)}
 .hbtn .ico{color:inherit;width:.875rem;height:.875rem;font-size:.6875rem}
-/* FONT SIZE CONTROLS */
 .fs-ctrl{display:flex;align-items:center;gap:.25rem;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:50px;padding:.2rem .5rem}
 .fs-btn{background:none;border:none;color:rgba(255,255,255,.8);cursor:pointer;font-family:'Tajawal';font-size:.85em;font-weight:700;padding:.15rem .4rem;border-radius:.375rem;transition:var(--tr);line-height:1}
 .fs-btn:hover{background:var(--gold);color:var(--navy)}
@@ -49,13 +47,10 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .nbtn.on{color:var(--goldl);background:rgba(201,168,76,.1);font-weight:700}
 .nbtn.on::after{content:'';position:absolute;bottom:.0625rem;right:20%;left:20%;height:.125rem;background:var(--gold);border-radius:.125rem}
 .nbtn .ico{color:inherit;width:.8125rem;height:.8125rem;font-size:.625rem}
-/* CONTAINER */
 .wrap{max-width:80rem;margin:0 auto;padding:.75rem .75rem;position:relative;z-index:1}
-/* SECTIONS */
 .sec{display:none;animation:fadeUp .4s ease}
 .sec.on{display:block}
 @keyframes fadeUp{from{opacity:0;transform:translateY(.9375rem)}to{opacity:1;transform:translateY(0)}}
-/* HERO */
 .hero{text-align:center;padding:1.375rem .75rem .875rem}
 .badge{display:inline-block;background:rgba(201,168,76,.12);border:1px solid rgba(201,168,76,.35);color:var(--goldl);padding:.1875rem 1rem;border-radius:50px;font-size:.8em;margin-bottom:.625rem;letter-spacing:.0625rem}
 .hero h2{font-size:2em;color:#fff;font-weight:900;margin-bottom:.4375rem;line-height:1.35}
@@ -65,7 +60,6 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .stat{text-align:center}
 .stat b{display:block;font-size:1.8em;font-weight:900;color:var(--goldl)}
 .stat small{color:rgba(255,255,255,.5);font-size:.78em}
-/* INDEX CARDS */
 .idx{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));gap:.5rem;margin-top:.75rem}
 .icard{background:var(--glass);border-radius:var(--r);padding:.75rem .8125rem;cursor:pointer;transition:var(--tr);border:1px solid transparent;position:relative;overflow:hidden}
 .icard::before{content:'';position:absolute;top:0;right:0;width:.1875rem;height:100%;background:var(--ac,var(--blue));border-radius:0 var(--r) var(--r) 0}
@@ -76,18 +70,15 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .icard p{font-size:.78em;color:#64748b;line-height:1.6}
 .icard .ar{position:absolute;bottom:.625rem;left:.75rem;color:var(--ac,var(--blue));font-size:.9em;transition:var(--tr)}
 .icard:hover .ar{transform:translateX(-.25rem)}
-/* PANELS */
 .panel{background:var(--glass);border-radius:var(--r);padding:1rem 1.125rem;margin-bottom:.625rem;box-shadow:var(--sh);backdrop-filter:blur(10px)}
 .ptitle{font-size:1.3em;color:var(--navy);font-weight:800;margin-bottom:.25rem;display:flex;align-items:center;gap:.5rem}
 .ptitle .ico-box{width:1.875rem;height:1.875rem;border-radius:.5rem}
 .psub{color:#64748b;font-size:.85em;margin-bottom:.625rem;padding-bottom:.4375rem;border-bottom:.125rem solid var(--ice)}
-/* SUB BLOCKS */
 .sb{background:#fff;border-radius:.625rem;padding:.625rem .75rem;margin:.4375rem 0;border-right:.1875rem solid var(--blue);box-shadow:0 .125rem .5rem rgba(0,0,0,.03);transition:var(--tr)}
 .sb:hover{box-shadow:0 .25rem 1rem rgba(0,0,0,.06)}
 .sb h4{color:var(--deep);font-size:1.05em;font-weight:700;margin-bottom:.375rem;display:flex;align-items:center;gap:.375rem}
 .sb h4 .ico{width:.875rem;height:.875rem;font-size:.6875rem}
 .sb p,.sb li{color:#374151;font-size:.88em}
-/* LISTS */
 .fl{list-style:none;padding:0}
 .fl li{padding:.3125rem .75rem;margin:.1875rem 0;background:var(--pearl);border-radius:.5rem;border-right:.1875rem solid var(--emerald);transition:var(--tr);font-size:.85em;display:flex;align-items:flex-start;gap:.375rem}
 .fl li:hover{transform:translateX(-.1875rem);background:var(--ice)}
@@ -96,12 +87,11 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .fl.w li .ico{color:var(--ruby)}
 .fl.g li{border-right-color:var(--gold)}
 .fl.g li .ico{color:var(--gold)}
-/* TABLES */
 .tw{overflow-x:auto;margin:.5rem 0;border-radius:.625rem;box-shadow:0 .125rem .75rem rgba(0,0,0,.05)}
 table{width:100%;border-collapse:collapse;background:#fff}
 thead{background:linear-gradient(135deg,var(--navy),var(--deep))}
 th{color:#fff;padding:.375rem .75rem;font-weight:600;font-size:.82em;text-align:right}
-td{padding:.3125rem .75rem;border-bottom:1px solid var(--silver);font-size:.82em;color:#374151}
+td{padding:.3125rem .75rem;border-bottom:1px solid var(--silver);font-size:.82em;color:#374151;vertical-align:top}
 tbody tr:hover{background:var(--ice)}
 tbody tr:last-child td{border-bottom:none}
 .bg{display:inline-block;padding:.0625rem .5625rem;border-radius:50px;font-size:.78em;font-weight:600}
@@ -110,7 +100,6 @@ tbody tr:last-child td{border-bottom:none}
 .bg-y{background:#fef3c7;color:#92400e}
 .bg-r{background:#fee2e2;color:var(--ruby)}
 .bg-p{background:#ede9fe;color:var(--purple)}
-/* CONCEPT MAP */
 .cmap{background:linear-gradient(135deg,var(--navy),var(--deep));border-radius:var(--r);padding:.875rem 1rem;margin:.625rem 0;text-align:center;position:relative;overflow:hidden}
 .cmap::before{content:'';position:absolute;top:-50%;right:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(201,168,76,.03) 0%,transparent 60%)}
 .cmap h4{color:var(--goldl);font-size:1em;margin-bottom:.625rem;position:relative;display:flex;align-items:center;justify-content:center;gap:.375rem}
@@ -120,14 +109,12 @@ tbody tr:last-child td{border-bottom:none}
 .mnode:hover{background:var(--gold);color:var(--navy);transform:scale(1.06)}
 .mnode.c{background:linear-gradient(135deg,var(--gold),var(--goldl));color:var(--navy);font-weight:800;font-size:.9em;padding:.5625rem 1.25rem;border:none}
 .marr{color:var(--goldl);font-size:1em}
-/* PROCESS */
 .ptrack{display:flex;gap:0;margin:.625rem 0;flex-wrap:wrap;justify-content:center}
 .pstep{flex:1;min-width:8.125rem;text-align:center;padding:.5rem .5rem;position:relative;background:#fff;margin:.1875rem;border-radius:.625rem;box-shadow:0 .125rem .625rem rgba(0,0,0,.04);transition:var(--tr)}
 .pstep:hover{transform:translateY(-.1875rem);box-shadow:var(--sh)}
 .pstep .sn{width:1.625rem;height:1.625rem;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--sky));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.78em;margin:0 auto .3125rem}
 .pstep h5{color:var(--navy);font-size:.85em;margin-bottom:.1875rem}
 .pstep p{color:#64748b;font-size:.72em}
-/* CHART */
 .chbox{background:#fff;border-radius:.625rem;padding:.75rem .875rem;margin:.5rem 0;box-shadow:0 .125rem .625rem rgba(0,0,0,.04)}
 .chtitle{font-size:.92em;color:var(--navy);font-weight:700;margin-bottom:.625rem;text-align:center;display:flex;align-items:center;justify-content:center;gap:.375rem}
 .chtitle .ico{color:var(--gold)}
@@ -136,12 +123,10 @@ tbody tr:last-child td{border-bottom:none}
 .bfill{width:100%;border-radius:.4375rem .4375rem 0 0;position:relative;min-width:2.5rem;transition:height 1s ease}
 .bfill .bv{position:absolute;top:-1.25rem;left:50%;transform:translateX(-50%);font-weight:800;font-size:.8em;color:var(--navy)}
 .blabel{margin-top:.375rem;font-size:.72em;color:#64748b;text-align:center;font-weight:600}
-/* PYRAMID */
 .pyr{display:flex;flex-direction:column;align-items:center;gap:.1875rem;margin:.625rem 0}
 .plvl{padding:.375rem .625rem;text-align:center;color:#fff;font-weight:600;border-radius:.4375rem;transition:var(--tr);cursor:default;font-size:.82em}
 .plvl:hover{transform:scale(1.02);box-shadow:0 .25rem .875rem rgba(0,0,0,.15)}
 .plvl small{display:block;font-weight:400;font-size:.75em;opacity:.85}
-/* STRATEGY CARDS */
 .sgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(18.125rem,1fr));gap:.5rem;margin:.5rem 0}
 .scard{background:#fff;border-radius:.625rem;padding:.625rem .75rem;box-shadow:0 .125rem .625rem rgba(0,0,0,.04);border-top:.1875rem solid var(--sc,var(--blue));transition:var(--tr)}
 .scard:hover{transform:translateY(-.1875rem);box-shadow:var(--sh)}
@@ -149,14 +134,12 @@ tbody tr:last-child td{border-bottom:none}
 .scard h4 .ico{color:var(--sc,var(--blue))}
 .scard .sl{font-weight:700;color:var(--sc,var(--blue));font-size:.8em}
 .scard p{font-size:.82em;color:#4b5563;margin:.1875rem 0}
-/* TIMELINE */
 .tline{position:relative;padding:.5rem 0;margin:.5rem 0}
 .tline::before{content:'';position:absolute;right:1rem;top:0;bottom:0;width:.125rem;background:linear-gradient(to bottom,var(--gold),var(--blue));border-radius:.125rem}
 .tli{position:relative;padding-right:2.625rem;margin-bottom:.5rem}
 .tli::before{content:'';position:absolute;right:.6875rem;top:.375rem;width:.75rem;height:.75rem;border-radius:50%;background:var(--gold);border:.125rem solid #fff;box-shadow:0 0 0 .125rem rgba(201,168,76,.3)}
 .tli h5{color:var(--navy);font-size:.88em;margin-bottom:.125rem}
 .tli p{color:#64748b;font-size:.8em}
-/* CALLOUT */
 .co{border-radius:.625rem;padding:.5rem .75rem;margin:.4375rem 0;display:flex;gap:.5rem;align-items:flex-start}
 .co-i{flex-shrink:0;margin-top:.0625rem}
 .co-i .ico{width:1.125rem;height:1.125rem;font-size:.8125rem}
@@ -171,7 +154,6 @@ tbody tr:last-child td{border-bottom:none}
 .co-ok{background:#d1fae5;border:1px solid #6ee7b7}
 .co-ok h5{color:var(--emerald)}
 .co-ok .co-i .ico{color:var(--emerald)}
-/* TABS */
 .itabs{display:flex;gap:.1875rem;margin-bottom:.5rem;flex-wrap:wrap}
 .itab{background:var(--pearl);border:1px solid var(--silver);padding:.25rem .75rem;border-radius:50px;cursor:pointer;font-family:'Tajawal';font-size:.78em;font-weight:600;color:#64748b;transition:var(--tr);display:flex;align-items:center;gap:.1875rem}
 .itab .ico{width:.75rem;height:.75rem;font-size:.5625rem}
@@ -179,7 +161,6 @@ tbody tr:last-child td{border-bottom:none}
 .itab.on .ico{color:#fff}
 .ic{display:none}
 .ic.on{display:block;animation:fadeUp .3s ease}
-/* ACCORDION */
 .acc{margin:.4375rem 0}
 .acc-i{background:#fff;border-radius:.5625rem;margin-bottom:.3125rem;overflow:hidden;box-shadow:0 .125rem .4375rem rgba(0,0,0,.03)}
 .acc-h{padding:.4375rem .875rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:700;color:var(--navy);font-size:.88em;transition:var(--tr)}
@@ -187,15 +168,15 @@ tbody tr:last-child td{border-bottom:none}
 .acc-h .ai{transition:var(--tr);color:var(--gold);font-size:.8em}
 .acc-i.open .acc-h .ai{transform:rotate(180deg)}
 .acc-b{max-height:0;overflow:hidden;transition:max-height .35s ease}
-.acc-i.open .acc-b{max-height:125rem}
+.acc-i.open .acc-b{max-height:300rem}
 .acc-bi{padding:0 .875rem .5rem;color:#4b5563;font-size:.85em}
-/* NUM STEPS */
+.acc-bi p{margin:.25rem 0}
+.acc-bi strong{color:var(--deep)}
 .nsteps{counter-reset:st}
 .nstep{display:flex;gap:.5rem;margin:.3125rem 0;align-items:flex-start}
 .nstep::before{counter-increment:st;content:counter(st);width:1.5rem;height:1.5rem;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,var(--blue),var(--sky));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.75em;margin-top:.125rem}
 .nstep div h5{color:var(--navy);font-size:.88em;margin-bottom:.0625rem}
 .nstep div p{color:#64748b;font-size:.8em}
-/* COMPARE */
 .cgrid{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin:.5rem 0}
 @media(max-width:768px){.cgrid{grid-template-columns:1fr}}
 .cbox{background:#fff;border-radius:.625rem;padding:.625rem .75rem;box-shadow:0 .125rem .625rem rgba(0,0,0,.04)}
@@ -205,18 +186,20 @@ tbody tr:last-child td{border-bottom:none}
 .cbox.con h5{color:var(--ruby);border-color:#fca5a5}
 .cbox.con h5 .ico{color:var(--ruby)}
 .cbox p{font-size:.82em;color:#4b5563}
-/* FLOATING */
 .fnav{position:fixed;bottom:.875rem;left:.875rem;z-index:999;display:flex;flex-direction:column;gap:.375rem}
 .fbtn{width:2.375rem;height:2.375rem;border-radius:50%;border:none;cursor:pointer;font-size:.9em;display:flex;align-items:center;justify-content:center;transition:var(--tr);box-shadow:var(--sh)}
 .fbtn:hover{transform:scale(1.12)}
 .fbtn .ico{color:inherit;width:auto;height:auto}
 .fhome{background:linear-gradient(135deg,var(--gold),var(--goldl));color:var(--navy)}
 .ftop{background:linear-gradient(135deg,var(--blue),var(--sky));color:#fff}
-/* PROGRESS */
 .pbar{position:fixed;top:0;right:0;height:.125rem;z-index:2000;background:linear-gradient(to left,var(--gold),var(--blue));transition:width .3s ease}
-/* FOOTER */
 .ftr{text-align:center;padding:.875rem;color:rgba(255,255,255,.3);font-size:.72em;margin-top:.9375rem}
-/* RESPONSIVE */
+/* CHECKLIST INTERACTIVE */
+.chk{list-style:none;padding:0}
+.chk li{padding:.375rem .75rem;margin:.25rem 0;background:var(--pearl);border-radius:.5rem;font-size:.85em;display:flex;align-items:center;gap:.5rem;cursor:pointer;transition:var(--tr);border:1px solid var(--silver)}
+.chk li:hover{background:var(--ice)}
+.chk li input{width:1rem;height:1rem;accent-color:var(--emerald);cursor:pointer;flex-shrink:0}
+.chk li.done{background:#d1fae5;border-color:#6ee7b7;text-decoration:line-through;color:#64748b}
 @media(max-width:768px){
 .hero h2{font-size:1.5em}
 .panel{padding:.625rem .75rem}
@@ -235,6 +218,7 @@ tbody tr:last-child td{border-bottom:none}
 body{background:#fff}
 .sec{display:block!important;page-break-inside:avoid}
 .panel{box-shadow:none;border:1px solid #ddd}
+.acc-b{max-height:none!important}
 }
 </style>
 </head>
@@ -278,14 +262,14 @@ body{background:#fff}
 <div class="hero">
 <div class="badge">◆ دليل المعلم التفاعلي الشامل ◆</div>
 <h2>التربية العملية <em>وأسس طرق التدريس</em></h2>
-<p>نموذج تفاعلي احترافي يجمع بين النظرية والتطبيق: من أسس التعلم الناجح ومنحنى النسيان، إلى هندسة الأهداف التعليمية، فاستراتيجيات التدريس المتنوعة، وكراس التحضير، وتكنولوجيا التعليم، وصولاً إلى منظومة التقويم الميداني الشاملة وخصائص المعلم الناجح.</p>
+<p>نموذج تفاعلي احترافي يجمع بين النظرية والتطبيق: من أسس التعلم الناجح ومنحنى النسيان، إلى هندسة الأهداف التعليمية، فاستراتيجيات التدريس المتنوعة، وكراس التحضير بمنهجيته الكاملة، وتكنولوجيا التعليم، وصولاً إلى منظومة التقويم الميداني الشاملة وخصائص المعلم الناجح.</p>
 <div class="stats">
 <div class="stat"><b>8</b><small>أقسام رئيسية</small></div>
 <div class="stat"><b>9</b><small>استراتيجيات تدريس</small></div>
-<div class="stat"><b>25</b><small>صفة للمعلم الناجح</small></div>
-<div class="stat"><b>6</b><small>مستويات معرفية</small></div>
-<div class="stat"><b>4</b><small>مستويات تذكر</small></div>
 <div class="stat"><b>11</b><small>بنداً في كراس التحضير</small></div>
+<div class="stat"><b>5</b><small>مراحل دورة التحضير</small></div>
+<div class="stat"><b>3</b><small>مراحل منهجية المعالجة</small></div>
+<div class="stat"><b>25</b><small>صفة للمعلم الناجح</small></div>
 </div>
 </div>
 <div class="idx">
@@ -293,7 +277,7 @@ body{background:#fff}
 <div class="icard" style="--ac:#059669" onclick="go('learn')"><div class="ci"><span class="ico">◈</span></div><h3>أسس التعلم الناجح ومنحنى النسيان</h3><p>التحليل الميكانيكي لمنحنيات الأداء والنسيان، مستويات التذكر الأربعة: التعرف، إعادة البناء، إعادة الكتابة، التنبؤ.</p><span class="ar">‹</span></div>
 <div class="icard" style="--ac:#c9a84c" onclick="go('obj')"><div class="ci"><span class="ico">◎</span></div><h3>هندسة الأهداف التعليمية</h3><p>الأبعاد السبعة للخبرة التربوية، تصنيف بلوم المعرفي، وعناصر صياغة الهدف السلوكي الصحيح.</p><span class="ar">‹</span></div>
 <div class="icard" style="--ac:#7c3aed" onclick="go('strat')"><div class="ci"><span class="ico">⟳</span></div><h3>استراتيجيات التدريس المتنوعة</h3><p>تسع استراتيجيات: الإلقائية، المناقشة، الاستقراء والقياس، الهربرطية، حل المشكلات، المشروع، الوحدات، التعليم المبرمج.</p><span class="ar">‹</span></div>
-<div class="icard" style="--ac:#dc2626" onclick="go('prep')"><div class="ci"><span class="ico">▤</span></div><h3>كراس التحضير اليومي</h3><p>النموذج التنفيذي بـ 11 بنداً: من صياغة المشكلة إلى أساليب التقويم، مع أمثلة تطبيقية (علوم + تاريخ).</p><span class="ar">‹</span></div>
+<div class="icard" style="--ac:#dc2626" onclick="go('prep')"><div class="ci"><span class="ico">▤</span></div><h3>كراس التحضير: الدليل الشامل</h3><p>المفهوم والوظائف، دورة التحضير الخماسية، المكونات الأحد عشر تفصيلياً، منهجية المعالجة، معايير الجودة، والأخطاء الشائعة.</p><span class="ar">‹</span></div>
 <div class="icard" style="--ac:#0891b2" onclick="go('tech')"><div class="ci"><span class="ico">◉</span></div><h3>تكنولوجيا التعليم والوسائل</h3><p>التطور التاريخي، تصنيف الوسائل، شروط العرض الضوئي، أسباب الفشل، والقائمة الإرشادية للتوظيف.</p><span class="ar">‹</span></div>
 <div class="icard" style="--ac:#ea580c" onclick="go('eval')"><div class="ci"><span class="ico">▣</span></div><h3>منظومة التقويم الميداني</h3><p>المقييمون الثلاثة: المشرف الجامعي، مدير المدرسة، والمدرس المتعاون، مع محاور بطاقات التقييم.</p><span class="ar">‹</span></div>
 <div class="icard" style="--ac:#16a34a" onclick="go('teach')"><div class="ci"><span class="ico">◑</span></div><h3>خصائص المعلم الناجح</h3><p>خمس وعشرون صفة في ثلاث فئات: رئيسية، شخصية، ومهنية سلوكية، مع التوجيهات الختامية.</p><span class="ar">‹</span></div>
@@ -319,12 +303,10 @@ body{background:#fff}
 <div class="panel">
 <div class="ptitle"><div class="ico-box"><span class="ico">§</span></div> مقدمة في التربية العملية</div>
 <div class="psub">المفهوم، الأهمية، ومعايير نجاح التعليم</div>
-
 <div class="sb">
 <h4><span class="ico">◆</span> تعريف التربية العملية</h4>
 <p>التربية العملية هي المرحلة التطبيقية من إعداد المعلم، حيث ينتقل فيها الطالب المعلم من الجانب النظري إلى التطبيق الفعلي في بيئة تعليمية حقيقية. تقتضي الممارسة التربوية الميدانية الحديثة تحويل العمل التعليمي في فترة التربية العملية من الارتجالية والعشوائية اللفظية إلى ممارسة منظّمة وخاضعة لمؤشرات قياس الأثر والاستدامة.</p>
 </div>
-
 <div class="co co-info">
 <div class="co-i"><span class="ico">◈</span></div>
 <div>
@@ -332,18 +314,10 @@ body{background:#fff}
 <p>إن نجاح التعليم — وفقاً لمقاييس التربية العملية المعتمدة — ليس مجرد عملية تحصيل لفظي مؤقت أو ترديد للمعلومات دون دراية بوظيفتها، بل هو التعليم الذي ينتج عنه تعلم فعّال يترك أثراً مستداماً لدى المتعلم. وتحدد شهادة النجاح في التعليم بمعيارين رئيسيين:</p>
 </div>
 </div>
-
 <div class="cgrid">
-<div class="cbox pro">
-<h5><span class="ico">◆</span> المعيار الأول: ديمومة الأثر</h5>
-<p>أن تدوم آثار النتائج التعليمية لفترات زمنية طويلة، ولا تتلاشى بمجرد انتهاء الموقف التدريسي أو أداء الامتحان.</p>
+<div class="cbox pro"><h5><span class="ico">◆</span> المعيار الأول: ديمومة الأثر</h5><p>أن تدوم آثار النتائج التعليمية لفترات زمنية طويلة، ولا تتلاشى بمجرد انتهاء الموقف التدريسي أو أداء الامتحان.</p></div>
+<div class="cbox pro"><h5><span class="ico">◆</span> المعيار الثاني: القابلية للتوظيف</h5><p>أن يستطيع المتعلم استخدام وتوظيف هذه الخبرات والمعارف في مواجهة مشكلات حياته اليومية والسيطرة على بيئته.</p></div>
 </div>
-<div class="cbox pro">
-<h5><span class="ico">◆</span> المعيار الثاني: القابلية للتوظيف</h5>
-<p>أن يستطيع المتعلم استخدام وتوظيف هذه الخبرات والمعارف في مواجهة مشكلات حياته اليومية والسيطرة على بيئته.</p>
-</div>
-</div>
-
 <div class="sb">
 <h4><span class="ico">◆</span> الفرق الجوهري بين التحصيل اللفظي والتغيير السلوكي</h4>
 <div class="tw">
@@ -357,7 +331,6 @@ body{background:#fff}
 </table>
 </div>
 </div>
-
 <div class="sb">
 <h4><span class="ico">◆</span> أهمية التربية العملية</h4>
 <ul class="fl">
@@ -369,7 +342,6 @@ body{background:#fff}
 <li><span class="ico">✓</span> فهم السياق التربوي والاجتماعي للعمل التعليمي</li>
 </ul>
 </div>
-
 <div class="cmap">
 <h4><span class="ico">◈</span> دورة التربية العملية</h4>
 <div class="mflow">
@@ -388,7 +360,6 @@ body{background:#fff}
 <div class="panel">
 <div class="ptitle"><div class="ico-box"><span class="ico">◈</span></div> أسس التعلم الناجح ومنحنى النسيان</div>
 <div class="psub">التحليل الميكانيكي لمنحنيات الأداء والنسيان ومستويات التذكر</div>
-
 <div class="co co-warn">
 <div class="co-i"><span class="ico">◈</span></div>
 <div>
@@ -396,7 +367,6 @@ body{background:#fff}
 <p>يعدّ كراس التحضير الأداة الهندسية التي تُترجم حقيقة التعلم العملي إلى إجراءات صفية متكاملة تضمن أقصى درجات الفاعلية والاستدامة. إن التحكم المنهجي في منحنيات التعلم يحدّ من تسارع النسيان، لكنه لا يترك للصدفة، بل يتطلب تخطيطاً هندسياً مسبقاً يتجسد في كراس التحضير اليومي وصياغة أهدافه التنفيذية.</p>
 </div>
 </div>
-
 <div class="sb">
 <h4><span class="ico">◆</span> منحنى الأداء: العلاقة بين عدد المحاولات ومستوى الإتقان</h4>
 <p>كشفت التجربة التربوية الميدانية والدراسات النفسية التجريبية عن وجود علاقات ميكانيكية حاسمة بين محاولات التعلم، ومعدلات التنفيذ، والزمن، والنسيان:</p>
@@ -411,7 +381,6 @@ body{background:#fff}
 </table>
 </div>
 </div>
-
 <div class="chbox">
 <div class="chtitle"><span class="ico">◈</span> منحنى النسيان: نسبة التذكر المتوقعة بعد التعلم</div>
 <div class="bchart">
@@ -423,7 +392,6 @@ body{background:#fff}
 <div class="bitem"><div class="bfill" style="height:25%;background:linear-gradient(to top,#991b1b,#ef4444)"><span class="bv">~25%</span></div><div class="blabel">بعد 31 يوماً</div></div>
 </div>
 </div>
-
 <div class="co co-info">
 <div class="co-i"><span class="ico">◈</span></div>
 <div>
@@ -431,7 +399,6 @@ body{background:#fff}
 <p>ثبت أن الطالب الذي يقتصر على حفظ المقاطع عديمة المعنى أو الكلمات المتناثرة أو الحقائق المجردة يتلاشى ما حفظه فوراً، لأن التركيز والانتباه لا يدومان. بدلاً من ذلك، ينبغي تقديم المعرفة في صور أفكار مترابطة تضمن أعلى درجات الاستبقاء وأقل معدلات النسيان — وهو ما يُعرف بـ "منحنى ضد النسيان".</p>
 </div>
 </div>
-
 <div class="sb">
 <h4><span class="ico">◆</span> مستويات التذكر الأربعة (من الأدنى إلى الأعلى)</h4>
 <p>تتفاوت قدرة الذاكرة على الاستبقاء باختلاف منحنى النسيان ودرجة القياس المطلوبة معرفياً من المتعلم:</p>
@@ -453,7 +420,6 @@ body{background:#fff}
 </table>
 </div>
 </div>
-
 <div class="cmap">
 <h4><span class="ico">◈</span> العلاقة بين مستويات التذكر ومقاومة النسيان</h4>
 <div class="mflow">
@@ -472,7 +438,6 @@ body{background:#fff}
 <div class="panel">
 <div class="ptitle"><div class="ico-box"><span class="ico">◎</span></div> هندسة الأهداف التعليمية وبناء هيكل كراس التحضير</div>
 <div class="psub">الأبعاد السبعة للخبرة التربوية وتصنيف بلوم المعرفي</div>
-
 <div class="co co-info">
 <div class="co-i"><span class="ico">◈</span></div>
 <div>
@@ -480,7 +445,6 @@ body{background:#fff}
 <p>إن التحديد الدقيق والواعي للأهداف التعليمية يشكل صمام الأمان الذي يقي المعلم من التخبط والمشكلات الصفية، فيعينه على اختيار الاستراتيجيات المناسبة وتصميم أساليب التقويم لتحقيق ما اكتسبه التلاميذ بالفعل، دون الخوض في تفاصيل لا لزوم لها.</p>
 </div>
 </div>
-
 <div class="sb">
 <h4><span class="ico">◆</span> الأبعاد السبعة الرئيسية للخبرة التربوية</h4>
 <p>تجاوزت الأهداف التربوية المعاصرة مجرد "تلقين" المعلومات لتشمل سبعة أبعاد رئيسية متكاملة، يجب تحويل كل منها إلى سلوك ملحوظ وقابل للقياس:</p>
@@ -504,7 +468,6 @@ body{background:#fff}
 <div class="acc-i"><div class="acc-h" onclick="tacc(this)">⑦ تقدير الجهد الإنساني <span class="ai">▾</span></div><div class="acc-b"><div class="acc-bi"><p>إدراك الطالب لجهود العلماء والأجيال السابقة في بناء المعرفة وتطويرها وتنميتها، والاعتراف بقيمة العمل الإنساني عبر حدود الزمان والمكان.</p></div></div></div>
 </div>
 </div>
-
 <div class="sb">
 <h4><span class="ico">◆</span> التصنيف المعرفي (بلوم) — المستويات المستهدفة</h4>
 <p>يتطلب التخطيط لإعداد كراس التحضير تمييزاً دقيقاً بين مستويات المخرجات المعرفية وفق تصنيف "بلوم" وزملائه، ضماناً لعدم حبس المتعلم في المستويات الدنيا:</p>
@@ -517,7 +480,6 @@ body{background:#fff}
 <div class="plvl" style="width:98%;background:linear-gradient(135deg,#1e293b,#475569)">المعرفة <small>الحفظ الآلي وتكرار المعلومات دون بالضرورة فهمها</small></div>
 </div>
 </div>
-
 <div class="sb">
 <h4><span class="ico">◆</span> عناصر كتابة الهدف التعليمي الصحيح</h4>
 <div class="tw">
@@ -540,7 +502,6 @@ body{background:#fff}
 <div class="panel">
 <div class="ptitle"><div class="ico-box"><span class="ico">⟳</span></div> استراتيجيات التدريس المتنوعة وتنفيذ مواقف التعلم الفعالة</div>
 <div class="psub">تسع استراتيجيات رئيسية مع تحليل خطوات السير والمزايا والعيوب</div>
-
 <div class="co co-warn">
 <div class="co-i"><span class="ico">◈</span></div>
 <div>
@@ -548,7 +509,6 @@ body{background:#fff}
 <p>تؤكد الأدبيات التربوية الميدانية أنه لا توجد طريقة تدريس "مثالية" أو مطلقة تصلح لكل الظروف والأوقات؛ إذ تتحدد جودة الاستراتيجية بمدى ملاءمتها لطبيعة المادة، والإمكانات المادية والبشرية المتاحة، ومراعاة الفروق الفردية بين المتعلمين وقدرتها على إثارة التفكير.</p>
 </div>
 </div>
-
 <div class="sb">
 <h4><span class="ico">◆</span> المبادئ العامة للتدريس الفعّال (قواعد التدرج)</h4>
 <div class="nsteps">
@@ -560,7 +520,6 @@ body{background:#fff}
 <div class="nstep"><div><h5>من الجزئيات إلى الكليات</h5><p>استقراء أمثلة متعددة للوصول إلى التعميمات والقوانين العامة.</p></div></div>
 </div>
 </div>
-
 <div class="itabs" id="stabs">
 <button class="itab on" onclick="ss('t1',this)"><span class="ico">§</span>الإلقائية</button>
 <button class="itab" onclick="ss('t2',this)"><span class="ico">§</span>المناقشة والأسئلة</button>
@@ -572,7 +531,6 @@ body{background:#fff}
 <button class="itab" onclick="ss('t8',this)"><span class="ico">§</span>الوحدات</button>
 <button class="itab" onclick="ss('t9',this)"><span class="ico">§</span>التعليم المبرمج</button>
 </div>
-
 <div class="ic on" id="st-t1">
 <div class="scard" style="--sc:#2563eb">
 <h4><span class="ico">◆</span> الطريقة الإلقائية / المحاضرة</h4>
@@ -585,7 +543,6 @@ body{background:#fff}
 <p><span class="sl">دور المعلم والمتعلم:</span> المعلم هو المصدر المباشر الوحيد للمعرفة؛ والمتعلم مستمع ومتلقٍ تنحصر مهمته في الاستيعاب اللاحق.</p>
 </div>
 </div>
-
 <div class="ic" id="st-t2">
 <div class="scard" style="--sc:#059669">
 <h4><span class="ico">◆</span> طريقة المناقشة والأسئلة</h4>
@@ -598,7 +555,6 @@ body{background:#fff}
 <p><span class="sl">دور المعلم والمتعلم:</span> المعلم موجّه ومحفّز؛ والمتعلم مشارك فعال ومفكر ومجيب.</p>
 </div>
 </div>
-
 <div class="ic" id="st-t3">
 <div class="scard" style="--sc:#7c3aed">
 <h4><span class="ico">◆</span> طريقة المناقشة الجماعية</h4>
@@ -611,7 +567,6 @@ body{background:#fff}
 <p><span class="sl">دور المعلم والمتعلم:</span> المعلم مسيّر ومساند وميسّر لا يسيطر على الموقف؛ والمتعلم هو محور العملية التعليمية والباحث عن المعرفة.</p>
 </div>
 </div>
-
 <div class="ic" id="st-t4">
 <div class="scard" style="--sc:#c9a84c">
 <h4><span class="ico">◆</span> طريقتا الاستقراء والقياس</h4>
@@ -634,7 +589,6 @@ body{background:#fff}
 </div>
 </div>
 </div>
-
 <div class="ic" id="st-t5">
 <div class="scard" style="--sc:#0891b2">
 <h4><span class="ico">◆</span> الطريقة الهربرطية وعلاقتها بالاستقراء والقياس</h4>
@@ -655,11 +609,10 @@ body{background:#fff}
 </div>
 </div>
 </div>
-
 <div class="ic" id="st-t6">
 <div class="scard" style="--sc:#dc2626">
 <h4><span class="ico">◆</span> طريقة حل المشكلات (جون ديوي)</h4>
-<p><span class="sl">المفهوم:</span> تنظيم التعلم حول مشكلات واقعية نابعة من بيئة الطالب تثير فضله وصولاً إلى حلول علمية.</p>
+<p><span class="sl">المفهوم:</span> تنظيم التعلم حول مشكلات واقعية نابعة من بيئة الطالب تثير فضوله وصولاً إلى حلول علمية.</p>
 <div class="nsteps">
 <div class="nstep"><div><h5>الشعور بالمشكلة</h5><p>الإحساس بالمشكلة وتحديدها والعمل على حلها.</p></div></div>
 <div class="nstep"><div><h5>جمع المعلومات</h5><p>جمع البيانات والمعلومات المتعلقة بالمشكلة.</p></div></div>
@@ -674,7 +627,6 @@ body{background:#fff}
 </div>
 </div>
 </div>
-
 <div class="ic" id="st-t7">
 <div class="scard" style="--sc:#ea580c">
 <h4><span class="ico">◆</span> طريقة المشروع (كيباتريك)</h4>
@@ -695,7 +647,6 @@ body{background:#fff}
 </div>
 </div>
 </div>
-
 <div class="ic" id="st-t8">
 <div class="scard" style="--sc:#16a34a">
 <h4><span class="ico">◆</span> طريقة الوحدات</h4>
@@ -703,7 +654,6 @@ body{background:#fff}
 <p><span class="sl">المزايا والنطاق:</span> نجحت بشكل كبير في المرحلتين الابتدائية والإعدادية لكونها تتناول مجالات معرفية متعددة. مثال: وحدة الماء، وحدة الطاقة، وحدة الغذاء، قناة السويس — حيث يُدرّس الموضوع من جوانبه العلمية، الجغرافية، والاجتماعية في قالب واحد.</p>
 </div>
 </div>
-
 <div class="ic" id="st-t9">
 <div class="scard" style="--sc:#7c3aed">
 <h4><span class="ico">◆</span> التعليم المبرمج (Programmed Instruction)</h4>
@@ -718,7 +668,6 @@ body{background:#fff}
 </div>
 </div>
 </div>
-
 <div class="sb" style="margin-top:.625rem">
 <h4><span class="ico">◆</span> جدول مقارنة شامل بين الاستراتيجيات</h4>
 <div class="tw">
@@ -741,44 +690,100 @@ body{background:#fff}
 </div>
 </section>
 
-<!-- ========== PREPARATION ========== -->
+<!-- ========== PREPARATION (EXPANDED) ========== -->
 <section class="sec" id="s-prep">
 <div class="panel">
-<div class="ptitle"><div class="ico-box"><span class="ico">▤</span></div> النموذج التنفيذي لجدول كراس التحضير اليومي</div>
-<div class="psub">إعادة تنظيم منهجي لصفحات التحضير لتحقيق أقصى فاعلية تدريسية</div>
+<div class="ptitle"><div class="ico-box"><span class="ico">▤</span></div> كراس التحضير: الأداة الهندسية للتعلم الفعال</div>
+<div class="psub">الدليل الشامل: المفهوم والوظائف ← دورة التحضير الخماسية ← المكونات الأحد عشر ← منهجية المعالجة ← معايير الجودة ← الأخطاء الشائعة ← النموذج التطبيقي</div>
 
+<!-- ===== 1. PHILOSOPHY ===== -->
 <div class="co co-info">
 <div class="co-i"><span class="ico">◈</span></div>
 <div>
-<h5>الأساس المنهجي</h5>
-<p>يُعاد تنظيم صفحات التحضير اليومي في جدول ممتد ينظم مكونات الدرس استناداً إلى النماذج الميدانية المعتمدة في التخصصات المختلفة. تأسيساً على هذا التحديد الهيكلي للأهداف والمخرجات داخل كراس التحضير، ينتقل المعلم والطالب معاً من مرحلة التخطيط النظري إلى اختيار استراتيجية التدريس المثلى وتنفيذ موقف التعلم.</p>
+<h5>لماذا يُوصف كراس التحضير بأنه "الأداة الهندسية"؟</h5>
+<p>تقتضي الممارسة التربوية الميدانية الحديثة تحويل العمل التعليمي في فترة التربية العملية من الارتجالية والعشوائية اللفظية إلى علم تنفيذي منضبط يخضع لمؤشرات قياس الأثر والاستدامة. ويعدّ كراس التحضير الأداة الهندسية التي تترجم الحقيقة العلمية للتعلم إلى إجراءات صفية متكاملة تضمن أقصى درجات الفاعلية والاستدامة؛ فالتحكم المنهجي في منحنيات التعلم والحد من تسارع النسيان لا يمكن أن يُترك للصدفة الصفية، بل يتطلب تخطيطاً هندسياً مسبقاً يتجسد في كراس التحضير اليومي وصياغة أهدافه التنفيذية.</p>
 </div>
 </div>
 
 <div class="sb">
-<h4><span class="ico">◆</span> مكونات جدول التحضير اليومي (11 بنداً رئيسياً)</h4>
-<div class="tw">
-<table>
-<thead><tr><th>#</th><th>البند</th><th>الوصف</th><th>مثال تطبيقي (علوم: درس الزهرة)</th><th>مثال تطبيقي (تاريخ: حملة نابليون)</th></tr></thead>
-<tbody>
-<tr><td>1</td><td><strong>نقطة الانطلاق / صياغة المشكلة</strong></td><td>تحديد مشكلة الدرس وطرحها عبر الملاحظة المباشرة</td><td>سؤال إشكالي: لماذا تقوم الحملة الفرنسية على مصر؟</td><td>ملاحظة مباشرة لطرح المشكلة</td></tr>
-<tr><td>2</td><td><strong>اكتساب الأهداف المعرفية</strong></td><td>حقائق معرفية ومعارف ووظائف</td><td>اكتساب مكونات الزهرة ووظائفها</td><td>معارف عن سير الحملة وأماكنها</td></tr>
-<tr><td>3</td><td><strong>رسم الأهداف المهارية</strong></td><td>مهارات عملية: رسم، تشريح، جمع عينات</td><td>تشريح الزهرة، رسم أجزائها، تحديد مكانها على الخريطة</td><td>رسم خط سير الحملة على الخريطة</td></tr>
-<tr><td>4</td><td><strong>حث البحث والتفكير العلمي</strong></td><td>تحليل وظيفة كل عضو ومناقشة الأسباب</td><td>تحليل وظيفة كل عضو في الزهرة</td><td>مناقشة الأهداف الحقيقية للحملة ونتائجها</td></tr>
-<tr><td>5</td><td><strong>المحافظة على الاتجاهات والقيم</strong></td><td>تنمية اتجاهات إيجابية نحو البيئة والوطن</td><td>تنمية اتجاه المحافظة على النباتات والبيئة</td><td>تأكيد مقاومة الاحتلال واتجاه النهاية بالفشل</td></tr>
-<tr><td>6</td><td><strong>جمع الميول والاهتمامات</strong></td><td>رصد ميول الطلاب وتوجيهها</td><td>الميل لتصوير الزهرة والاهتمام بالحدائق</td><td>الميل لقراءة التاريخ وتحليل دوافع الأحداث</td></tr>
-<tr><td>7</td><td><strong>التذوق</strong></td><td>تذوق الجمال التربوي والفني</td><td>تذوق تناسق الألوان والتصميم في لوحات الزهرة</td><td>تذوق ملابس الجنود في معركة أبي قير</td></tr>
-<tr><td>8</td><td><strong>تقدير الجهد الإنساني</strong></td><td>تقدير جهود العلماء والشعوب</td><td>تقدير جهود العلماء في التصنيف والتقسيم العلمي</td><td>تقدير جهود الشعب المصري وعلماء الحملة</td></tr>
-<tr><td>9</td><td><strong>أساليب إعداد التقويم</strong></td><td>أسئلة، طلبات، تقارير، تدريبات</td><td>صياغة أسئلة تقويمية، تقييم تقارير، تدريبات رسم</td><td>صياغة أسئلة تقويمية وخرائط وتدريبات</td></tr>
-<tr><td>10</td><td><strong>مصادر ومراجع التعلم</strong></td><td>الكتب، المكتبة، المتاحف، الحدائق</td><td>كتاب العلوم، حديقة المدرسة، المراجع والمتاحف</td><td>كتاب التاريخ، المكتبة، المراجع التاريخية</td></tr>
-<tr><td>11</td><td><strong>تشريح الوسائل والأنشطة</strong></td><td>رسم واستخدام الوسائل التعليمية</td><td>استخدام الزهرة الحقيقية، رسم لوحات تعليمية، فحص كتب وصور</td><td>رسم خرائط، استخدام صور وأحجار رشيد</td></tr>
-</tbody>
-</table>
+<h4><span class="ico">◆</span> التعريف المفاهيمي الشامل لكراس التحضير</h4>
+<p>كراس التحضير وثيقة تنفيذية شاملة تضم: تحليل محتوى الدرس، وتحليل خصائص المتعلمين، وصياغة الأهداف السلوكية في مجالاتها الثلاثة (المعرفي، المهاري، الوجداني)، واختيار استراتيجية التدريس والوسائل التعليمية الملائمة، وتصميم أدوات التقويم التي تقيس مدى تحقق الأهداف. فهو بمثابة "العقد" الذي يقطعه المعلم على نفسه قبل دخول الحصة، و"المرجع الوثائقي" الذي يُقيَّم بموجبه من أطراف الإشراف الميداني الثلاثة.</p>
+</div>
+
+<div class="sb">
+<h4><span class="ico">◆</span> الوظائف الثلاث الجوهرية لكراس التحضير</h4>
+<div class="sgrid">
+<div class="scard" style="--sc:#2563eb">
+<h4><span class="ico">◆</span> الوظيفة التخطيطية (قبل الحصة)</h4>
+<p><span class="sl">المفهوم:</span> ترجمة محتوى المنهج مسبقاً إلى إجراءات صفية قابلة للتنفيذ، موزعة زمنياً ومنطقياً.</p>
+<p><span class="sl">المخرج:</span> خريطة طريق واضحة تحمي المعلم من الارتجال والعشوائية اللفظية.</p>
+</div>
+<div class="scard" style="--sc:#059669">
+<h4><span class="ico">◆</span> الوظيفة التنفيذية (أثناء الحصة)</h4>
+<p><span class="sl">المفهوم:</span> مرجع ميداني يستند إليه المعلم أثناء التدريس لإدارة الزمن والإجراءات والأسئلة والوسائل.</p>
+<p><span class="sl">المخرج:</span> ضبط إيقاع الحصة، والتوزيع المتوازن للأنشطة، وحسن توظيف الوقت الصافي.</p>
+</div>
+<div class="scard" style="--sc:#c9a84c">
+<h4><span class="ico">◆</span> الوظيفة التقويمية التوثيقية (بعد الحصة)</h4>
+<p><span class="sl">المفهوم:</span> سجل وثائقي يتيح التقويم الذاتي وتقويم المشرفين الثلاثة، ويُتخذ أساساً للتحسين المستمر.</p>
+<p><span class="sl">المخرج:</span> تغذية راجعة موثقة، ونمو مهني تراكمي عبر فترة التربية العملية.</p>
+</div>
 </div>
 </div>
 
-<div class="cmap">
-<h4><span class="ico">◈</span> دورة التحضير: من التخطيط النظري إلى التنفيذ</h4>
+<div class="co co-warn">
+<div class="co-i"><span class="ico">◈</span></div>
+<div>
+<h5>الصلة بمنحنى النسيان: لماذا لا غنى عن الكراس؟</h5>
+<p>لأن منحنى النسيان يهبط بنسبة التذكر إلى أقل من 50% خلال ساعات قليلة من التعلم، فإن كراس التحضير هو الضمانة الوحيدة لإعادة تنظيم الخبرات في صورة "أفكار مترابطة" ومراجعات مخططة (منحنى ضد النسيان)، بدلاً من ترك التعلم لعشوائية اللحظة الصفية التي تنتج حفظاً مجرداً يتلاشى فوراً.</p>
+</div>
+</div>
+
+<!-- ===== 2. THE CYCLE (IMAGE CONCEPTS) ===== -->
+<div class="sb">
+<h4><span class="ico">◆</span> دورة التحضير: من التخطيط النظري إلى التنفيذ (شرح الخريطة المفاهيمية)</h4>
+<p>تتكون دورة التحضير من خمس مراحل مترابطة تشكل حلقة مغلقة لا خطاً مستقيماً: كل مرحلة تُغذّي المرحلة التالية، ثم تعود نتائج التقويم (المرحلة الخامسة) لتغذي إعادة تعريف المشكلة والأهداف في الدرس التالي، فيصبح الكراس وثيقة حية تتطور مع كل خبرة صفية.</p>
+<div class="ptrack">
+<div class="pstep"><div class="sn">1</div><h5>تحديد المشكلة</h5><p>نقطة الانطلاق والسؤال الإشكالي</p></div>
+<div class="pstep"><div class="sn">2</div><h5>صياغة الأهداف</h5><p>سلوكيات ملحوظة وقابلة للقياس</p></div>
+<div class="pstep"><div class="sn">3</div><h5>اختيار الاستراتيجية</h5><p>ملاءمة الطريقة للمادة والمتعلمين</p></div>
+<div class="pstep"><div class="sn">4</div><h5>تحديد الوسائل</h5><p>من المحسوس إلى الرمز المعبر</p></div>
+<div class="pstep"><div class="sn">5</div><h5>إعداد التقويم</h5><p>أدوات قياس تحقق الأهداف</p></div>
+</div>
+<div class="acc">
+<div class="acc-i"><div class="acc-h" onclick="tacc(this)">المرحلة ①: تحديد المشكلة (نقطة الانطلاق) <span class="ai">▾</span></div><div class="acc-b"><div class="acc-bi">
+<p><strong>المفهوم:</strong> نقطة انطلاق أي درس ناجح ليست عرض المعلومات، بل صياغة "مشكلة" تثير فضول المتعلم وتخلق لديه حالة من عدم التوازن المعرفي تدفعه للبحث عن الإجابة. تُحدَّد مشكلة الدرس وتُطرح عبر الملاحظة المباشرة لظاهرة محسوسة، أو عبر سؤال إشكالي مفتوح.</p>
+<p><strong>طريقة المعالجة:</strong> يراجع المعلم محتوى الدرس ويستخرج منه سؤالاً محورياً يربط خبرة المتعلم السابقة بالمعرفة الجديدة. مثال ميداني (تاريخ): "لماذا قامت الحملة الفرنسية على مصر؟"، ومثال (علوم): ملاحظة زهرة حقيقية ثم طرح سؤال: "كيف تتكاثر هذه النباتات ولماذا تختلف ألوانها؟".</p>
+<p><strong>شروط النجاح:</strong> أن تكون المشكلة واقعية نابعة من بيئة المتعلم، مثيرة للفضول، مناسبة لمستوى نضجه، وغير موحية بالإجابة؛ وألا تكون سهلة مملة أو صعبة محبطة.</p>
+<p><strong>الخطأ الشائع:</strong> البدء بعنوان الدرس مباشرة ("اليوم ندرس الزهرة") بدلاً من المشكلة، فيفقد الدرس محركه النفسي منذ اللحظة الأولى.</p>
+</div></div></div>
+<div class="acc-i"><div class="acc-h" onclick="tacc(this)">المرحلة ②: صياغة الأهداف (المعرفية والمهارية والوجدانية) <span class="ai">▾</span></div><div class="acc-b"><div class="acc-bi">
+<p><strong>المفهوم:</strong> تحويل نوايا المعلم العامة إلى سلوكيات ملحوظة وقابلة للقياس تغطي الأبعاد السبعة للخبرة التربوية (المعرفة، المهارات، التفكير العلمي، الاتجاهات والقيم، الميول، التذوق، تقدير الجهد الإنساني)، مع التمييز الدقيق بين مستويات بلوم المعرفية لضمان عدم حبس المتعلم في مستوى الحفظ.</p>
+<p><strong>طريقة المعالجة:</strong> تُكتب الأهداف بصيغة: (أن + فعل سلوكي + المحتوى + الشرط + المعيار). مثال: "أن يرسم الطالب أجزاء الزهرة الملقحة بدقة 80% باستخدام المجسم خلال 10 دقائق". وتُصاغ أهداف لكل مجال: معرفي (يكتسب مكونات الزهرة ووظائفها)، مهاري (يشريح الزهرة ويرسم أجزاءها)، وجداني (يحافظ على النباتات والبيئة).</p>
+<p><strong>شروط النجاح:</strong> أن يكون الفعل سلوكياً قابلاً للملاحظة (يحدد، يقارن، يرسم) لا باطنياً غامضاً (يفهم، يعرف، يدرك)، وأن يتسق الهدف مع مستوى بلوم المستهدف ومع أداة التقويم المصممة لقياسه.</p>
+<p><strong>الخطأ الشائع:</strong> صياغة أهداف عامة فضفاضة لا يمكن قياسها، أو اقتصار الأهداف على المجال المعرفي الأدنى (الحفظ) وإهمال المهاري والوجداني.</p>
+</div></div></div>
+<div class="acc-i"><div class="acc-h" onclick="tacc(this)">المرحلة ③: اختيار الاستراتيجية (موقف التعلم الفعال) <span class="ai">▾</span></div><div class="acc-b"><div class="acc-bi">
+<p><strong>المفهوم:</strong> بناءً على تحديد الأهداف، ينتقل المعلم والطالب معاً من مرحلة التخطيط النظري إلى اختيار استراتيجية التدريس المثلى لتنفيذ موقف التعلم. ولا توجد استراتيجية مثالية مطلقة؛ بل تتحدد الجودة بمدى ملاءمة الطريقة لطبيعة المادة الدراسية، والإمكانات المتاحة، ومراعاة الفروق الفردية، وقدرة الطريقة على إثارة التفكير.</p>
+<p><strong>طريقة المعالجة:</strong> يسأل المعلم نفسه: هل المحتوى قاعدة تُستنبط (استقراء وقياس/هربرطية)؟ أم ظاهرة تُفسَّر (حل المشكلات)؟ أم مهارة تُدرَّب (تكرار موجه)؟ أم قيمة تُعايش (لعب أدوار/مناقشة جماعية)؟ ثم يحدد خطوات السير الميدانية للاستراتيجية المختارة داخل جدول التحضير، ويوزع الزمن على مراحلها.</p>
+<p><strong>شروط النجاح:</strong> الالتزام بقواعد التدرج الست (من المعلوم للمجهول، من السهل للصعب، من البسيط للمعقد، من الكل للجزء ثم للكل، من المحسوس للمجرد، من الجزئيات للكليات)، وتنويع الاستراتيجيات عبر الدروس لعدم إصابة المتعلمين بالرتابة.</p>
+<p><strong>الخطأ الشائع:</strong> اختيار الاستراتيجية بناءً على راحة المعلم (الإلقائية دائماً) بدلاً من طبيعة الهدف التعليمي، فيُقيس هدفٌ مهاري بمحاضرة لفظية.</p>
+</div></div></div>
+<div class="acc-i"><div class="acc-h" onclick="tacc(this)">المرحلة ④: تحديد الوسائل (تجسيد المفاهيم) <span class="ai">▾</span></div><div class="acc-b"><div class="acc-bi">
+<p><strong>المفهوم:</strong> الوسائل التعليمية جسر ينقل المفهوم من التجريد اللفظي إلى الإدراك الحسي المباشر، وهي عنصر جوهري لتقليل اللفظية العقيمة وتوفير الأساس المادي للتفكير، لا أداة ترفيه أو إشغال وقت.</p>
+<p><strong>طريقة المعالجة:</strong> تُحدَّد الوسيلة بدقة وتُسجَّل في البند المخصص لها بكراس التحضير، مع التأكد من أنها تخدم الهدف الرئيسي للدرس (توضيح مفهوم أو حل مشكلة). ويُتدرج في استخدامها من المحسوس المباشر (زهرة حقيقية، تشريح، تجربة معملية) إلى الوسائل المصورة (عروض ضوئية، شرائح) ثم الرموز البصرية (لوحات، خرائط، رسوم بيانية)، مع إشراك الطلاب في تجهيزها وتشغيلها.</p>
+<p><strong>شروط النجاح:</strong> إعداد الغرفة الصفية للعرض الضوئي بشكل متوازن، والتأكد من سلامة الأجهزة والشرائح قبل الحصة، وربط المادة المصورة بأسئلة محددة في الكراس لتتحول المشاهدة إلى نشاط تفاعلي لا متعة سلبية.</p>
+<p><strong>الخطأ الشائع:</strong> تسجيل وسيلة في الكراس دون التأكد من توفرها أو سلامتها، أو استخدامها لإثارة عشوائية غير مرتبطة بالهدف.</p>
+</div></div></div>
+<div class="acc-i"><div class="acc-h" onclick="tacc(this)">المرحلة ⑤: إعداد التقويم (قياس التحقق وإغلاق الحلقة) <span class="ai">▾</span></div><div class="acc-b"><div class="acc-bi">
+<p><strong>المفهوم:</strong> تصميم أدوات قياس تكشف مدى تحقق كل هدف من الأهداف المصاغة، قبل دخول الحصة لا بعدها. التقويم هنا تكويني (Formative) يوجه التعلم أثناء الموقف، وختامي يؤكد التحقق في نهايته.</p>
+<p><strong>طريقة المعالجة:</strong> لكل هدف سؤال أو مهمة تقويمية مقابلة: أسئلة تقويمية صفيّة، طلبات وتقارير، تدريبات رسم وتشريح، قوائم شطب (Checklists) للمهارات، ومقاييس تقدير (Rating Scales) للأداء. ويُراعى أن تغطي أدوات التقويم المستويات المعرفية العليا (تحليل، تركيب، تقويم) لا المعرفة وحدها.</p>
+<p><strong>شروط النجاح:</strong> التطابق التام بين (الهدف ← النشاط التعليمي ← أداة التقويم)، وهو ما يسمى "المحاذاة البنائية"؛ فأي هدف بلا أداة قياس هو هدف ميت على ورق الكراس.</p>
+<p><strong>الخطأ الشائع:</strong> تقويم ما دُرِّس فعلاً لا ما كُتب في الأهداف، أو اقتصار التقويم على سؤال شفوي واحد في آخر الحصة دون توثيق.</p>
+</div></div></div>
+</div>
+<div class="cmap" style="margin-top:.5rem">
+<h4><span class="ico">◈</span> الحلقة المغلقة: التقويم يعيد تغذية التخطيط</h4>
 <div class="mflow">
 <span class="mnode">تحديد المشكلة</span><span class="marr">‹</span>
 <span class="mnode">صياغة الأهداف</span><span class="marr">‹</span>
@@ -786,13 +791,201 @@ body{background:#fff}
 <span class="mnode">تحديد الوسائل</span><span class="marr">›</span>
 <span class="mnode">إعداد التقويم</span>
 </div>
+<div class="mflow" style="margin-top:.5rem">
+<span class="mnode">نتائج التقويم</span><span class="marr">⟲</span>
+<span class="mnode c">تغذية راجعة</span><span class="marr">⟲</span>
+<span class="mnode">تعديل المشكلة والأهداف للدرس التالي</span>
+</div>
+<p style="color:rgba(255,255,255,.55);font-size:.78em;margin-top:.5rem">الدورة دائرية لا خطية: نتائج التقويم تصبح مدخلاً جديداً لإعادة التخطيط، فيظل الكراس وثيقة حية متطورة</p>
+</div>
+</div>
+
+<!-- ===== 3. THE 11 COMPONENTS ===== -->
+<div class="sb">
+<h4><span class="ico">◆</span> المكونات البنائية لكراس التحضير اليومي (11 بنداً مشروحاً)</h4>
+<p>يُعاد تنظيم صفحات التحضير اليومي في جدول ممتد ينظم مكونات الدرس استناداً إلى النماذج الميدانية المعتمدة في التخصصات المختلفة (كالعلوم والتاريخ). وفيما يلي شرح تفصيلي لكل بند: مفهومه، غرضه التربوي، طريقة كتابته، وخطؤه الشائع:</p>
+<div class="acc">
+<div class="acc-i"><div class="acc-h" onclick="tacc(this)">البند ①: نقطة الانطلاق / صياغة المشكلة <span class="ai">▾</span></div><div class="acc-b"><div class="acc-bi">
+<p><strong>المفهوم والغرض:</strong> تحديد مشكلة الدرس وطرحها عبر الملاحظة المباشرة أو السؤال الإشكالي، لخلق الدافعية المعرفية منذ اللحظة الأولى.</p>
+<p><strong>طريقة الكتابة:</strong> تُكتب بصيغة سؤال مفتوح أو وصف لظاهرة تُلاحظ مباشرة. مثال (تاريخ): "لماذا قامت الحملة الفرنسية على مصر؟" — مثال (علوم): ملاحظة زهرة حقيقية وطرح سؤال التكاثر والألوان.</p>
+<p><strong>الخطأ الشائع:</strong> كتابة عنوان الدرس بدل المشكلة، فيغيب محرك الفضول.</p>
+</div></div></div>
+<div class="acc-i"><div class="acc-h" onclick="tacc(this)">البند ②: الأهداف المعرفية (اكتساب المعارف) <span class="ai">▾</span></div><div class="acc-b"><div class="acc-bi">
+<p><strong>المفهوم والغرض:</strong> الحقائق والمعارف والوظائف التي سيكتسبها المتعلم، مصاغة وفق مستويات بلوم لا الحفظ وحده.</p>
+<p><strong>طريقة الكتابة:</strong> "أن + فعل سلوكي معرفي + المحتوى". مثال (علوم): "يكتسب مكونات الزهرة ووظائفها" — مثال (تاريخ): "يستظهر معارف عن سير الحملة وأماكن معاركها".</p>
+<p><strong>الخطأ الشائع:</strong> أفعال باطنية غير قابلة للقياس (يفهم، يدرك) بدل (يعدد، يقارن، يحلل).</p>
+</div></div></div>
+<div class="acc-i"><div class="acc-h" onclick="tacc(this)">البند ③: الأهداف المهارية (رسم وتشريح وجمع) <span class="ai">▾</span></div><div class="acc-b"><div class="acc-bi">
+<p><strong>المفهوم والغرض:</strong> المهارات العملية اليدوية والحركية والعلمية: رسم، تشريح، جمع عينات، تحديد أماكن على الخريطة.</p>
+<p><strong>طريقة الكتابة:</strong> فعل مهاري + ناتج ملموس. مثال (علوم): "يشريح الزهرة، يرسم أجزاءها، يجمع عينات مختلفة" — مثال (تاريخ): "يرسم خط سير الحملة ويحدد أماكن المعارك على الخريطة".</p>
+<p><strong>الخطأ الشائع:</strong> إهمال هذا البند كلياً في الدروس النظرية، مع أن كل درس يحتمل مهارة (رسم خريطة مفاهيم، جدول مقارنة، مخطط).</p>
+</div></div></div>
+<div class="acc-i"><div class="acc-h" onclick="tacc(this)">البند ④: حث البحث والتفكير العلمي <span class="ai">▾</span></div><div class="acc-b"><div class="acc-bi">
+<p><strong>المفهوم والغرض:</strong> تدريب المتعلم على خطوات التفكير العلمي: تحليل وظيفة كل عضو، مناقشة الأسباب، فرض الفروض واختبارها.</p>
+<p><strong>طريقة الكتابة:</strong> تُدرج أسئلة تحليلية تعليلية. مثال (علوم): "حلل وظيفة كل عضو في الزهرة واستمرارية النوع" — مثال (تاريخ): "ناقش الأهداف الحقيقية للحملة ونتائجها".</p>
+<p><strong>الخطأ الشائع:</strong> الاقتصار على أسئلة التذكر، فتُحبس عقول المتعلمين في أدنى مستويات بلوم.</p>
+</div></div></div>
+<div class="acc-i"><div class="acc-h" onclick="tacc(this)">البند ⑤: الاتجاهات والقيم (المحافظة عليها) <span class="ai">▾</span></div><div class="acc-b"><div class="acc-bi">
+<p><strong>المفهوم والغرض:</strong> تنمية الاتجاهات الإيجابية والقيم المصاحبة للمتعلم مدى الحياة: الدينية، العلمية، الاجتماعية، الاقتصادية.</p>
+<p><strong>طريقة الكتابة:</strong> اتجاه محدد قابل للملاحظة السلوكية. مثال (علوم): "تنمية اتجاه المحافظة على النباتات والبيئة" — مثال (تاريخ): "تأكيد مقاومة الاحتلال وأن نهاية الغزو بالفشل".</p>
+<p><strong>الخطأ الشائع:</strong> صياغة قيم شعاراتية عامة ("غرس حب الوطن") دون موقف صفي ملموس يجسدها.</p>
+</div></div></div>
+<div class="acc-i"><div class="acc-h" onclick="tacc(this)">البند ⑥: الميول والاهتمامات (جمعها وتوجيهها) <span class="ai">▾</span></div><div class="acc-b"><div class="acc-bi">
+<p><strong>المفهوم والغرض:</strong> رصد ميول الطلاب الطبيعية وتوجيهها نحو أنشطة وهوايات مفيدة تستمر كتعلم ذاتي قائم على الشغف.</p>
+<p><strong>طريقة الكتابة:</strong> ميل متوقع + نشاط موجه. مثال (علوم): "الميل لتصوير الزهور والاهتمام بالحدائق ← نشاط نادي العلوم" — مثال (تاريخ): "الميل لقراءة التاريخ وتحليل دوافع الأحداث ← مسابقة بحثية".</p>
+<p><strong>الخطأ الشائع:</strong> تجاهل ميول المتعلمين الواقعية وفرض أنشطة لا تثير اهتمامهم.</p>
+</div></div></div>
+<div class="acc-i"><div class="acc-h" onclick="tacc(this)">البند ⑦: التذوق (التربوي والجمالي) <span class="ai">▾</span></div><div class="acc-b"><div class="acc-bi">
+<p><strong>المفهوم والغرض:</strong> تنمية قدرة المتعلم على تذوق الجمال الفني والأدبي والعلمي الكامن في الخبرات، مما يزيد تقديره للقيم.</p>
+<p><strong>طريقة الكتابة:</strong> موقف تذوقي محدد. مثال (علوم): "تذوق تناسق الألوان والتصميم في لوحات الزهور" — مثال (تاريخ): "تذوق جماليات ملابس الجنود في لوحات معركة أبي قير".</p>
+<p><strong>الخطأ الشائع:</strong> اعتبار التذوق ترفاً غير ضروري وحذفه من الكراس، وهو بُعد أصيل من الأبعاد السبعة.</p>
+</div></div></div>
+<div class="acc-i"><div class="acc-h" onclick="tacc(this)">البند ⑧: تقدير الجهد الإنساني <span class="ai">▾</span></div><div class="acc-b"><div class="acc-bi">
+<p><strong>المفهوم والغرض:</strong> إدراك المتعلم لجهود العلماء والأجيال السابقة في بناء المعرفة وتطويرها، والاعتراف بقيمة العمل الإنساني عبر الزمان والمكان.</p>
+<p><strong>طريقة الكتابة:</strong> إسهام إنساني مرتبط بالمحتوى. مثال (علوم): "تقدير جهود العلماء في التصنيف والتقسيم العلمي" — مثال (تاريخ): "تقدير كفاح الشعب المصري وجهود علماء الحملة".</p>
+<p><strong>الخطأ الشائع:</strong> تقديم المعرفة كمنتج جاهز منزوع التاريخ، فيفقد المتعلم صلة المعرفة بجهد الإنسان.</p>
+</div></div></div>
+<div class="acc-i"><div class="acc-h" onclick="tacc(this)">البند ⑨: أساليب إعداد التقويم <span class="ai">▾</span></div><div class="acc-b"><div class="acc-bi">
+<p><strong>المفهوم والغرض:</strong> تصميم أدوات قياس تحقق الأهداف قبل دخول الحصة: أسئلة تقويمية، طلبات، تقارير، تدريبات، قوائم شطب، ومقاييس تقدير.</p>
+<p><strong>طريقة الكتابة:</strong> لكل هدف أداة مقابلة موثقة. مثال (علوم): "صياغة أسئلة تقويمية، تقييم تقارير التشريح، تدريبات رسم" — مثال (تاريخ): "أسئلة تقويمية، خرائط خط السير، تدريبات زمنية".</p>
+<p><strong>الخطأ الشائع:</strong> تقويم غير محاذٍ للأهداف، أو سؤال شفوي يتيم في آخر الحصة دون توثيق نتائج.</p>
+</div></div></div>
+<div class="acc-i"><div class="acc-h" onclick="tacc(this)">البند ⑩: مصادر ومراجع التعلم <span class="ai">▾</span></div><div class="acc-b"><div class="acc-bi">
+<p><strong>المفهوم والغرض:</strong> تحديد مصادر المعرفة التي سيستقي منها المعلم والمتعلم: الكتاب المدرسي، المكتبة، المتاحف، الحدائق، المراجع المتخصصة.</p>
+<p><strong>طريقة الكتابة:</strong> قائمة مصادر محددة بالعنوان والصفحة. مثال (علوم): "كتاب العلوم، حديقة المدرسة، مراجع التصنيف، المتحف النباتي" — مثال (تاريخ): "كتاب التاريخ، المكتبة، المراجع التاريخية، حجر رشيد".</p>
+<p><strong>الخطأ الشائع:</strong> الاكتفاء بالكتاب المدرسي وحده، فيُحرم المتعلم من مهارة البحث في مصادر متعددة.</p>
+</div></div></div>
+<div class="acc-i"><div class="acc-h" onclick="tacc(this)">البند ⑪: الوسائل والأنشطة (تشريحها وتوظيفها) <span class="ai">▾</span></div><div class="acc-b"><div class="acc-bi">
+<p><strong>المفهوم والغرض:</strong> حصر الوسائل التعليمية والأنشطة المصاحبة وخطوات توظيفها داخل الحصة، من المحسوس المباشر إلى الرمز البصري المعبر.</p>
+<p><strong>طريقة الكتابة:</strong> وسيلة + لحظة استخدامها + الغرض منها. مثال (علوم): "زهرة حقيقية للتشريح، لوحات تعليمية مرسومة، فحص كتب وصور" — مثال (تاريخ): "خرائط خط السير، صور الحملة، مجسم حجر رشيد".</p>
+<p><strong>الخطأ الشائع:</strong> تسجيل وسائل غير متوفرة أو غير سليمة، أو استخدامها لإثارة عشوائية لا تخدم الهدف.</p>
+</div></div></div>
+</div>
+</div>
+
+<!-- MASTER TABLE -->
+<div class="sb">
+<h4><span class="ico">◆</span> الجدول التنفيذي الممتد: البنود الأحد عشر بمثالين تطبيقيين</h4>
+<div class="tw">
+<table>
+<thead><tr><th>#</th><th>البند</th><th>الوصف</th><th>مثال تطبيقي (علوم: درس الزهرة)</th><th>مثال تطبيقي (تاريخ: حملة نابليون)</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><strong>نقطة الانطلاق / صياغة المشكلة</strong></td><td>تحديد مشكلة الدرس وطرحها عبر الملاحظة المباشرة</td><td>سؤال إشكالي بعد ملاحظة زهرة: كيف تتكاثر النباتات ولماذا تختلف ألوانها؟</td><td>سؤال إشكالي: لماذا قامت الحملة الفرنسية على مصر؟</td></tr>
+<tr><td>2</td><td><strong>الأهداف المعرفية</strong></td><td>حقائق معرفية ومعارف ووظائف</td><td>اكتساب مكونات الزهرة ووظائفها</td><td>معارف عن سير الحملة وأماكن معاركها</td></tr>
+<tr><td>3</td><td><strong>الأهداف المهارية</strong></td><td>مهارات عملية: رسم، تشريح، جمع عينات</td><td>تشريح الزهرة، رسم أجزائها، جمع عينات مختلفة</td><td>رسم خط سير الحملة وتحديد المعارك على الخريطة</td></tr>
+<tr><td>4</td><td><strong>حث البحث والتفكير العلمي</strong></td><td>تحليل وظيفة كل عضو ومناقشة الأسباب</td><td>تحليل وظيفة كل عضو في الزهرة واستمرارية النوع</td><td>مناقشة الأهداف الحقيقية للحملة ونتائجها</td></tr>
+<tr><td>5</td><td><strong>الاتجاهات والقيم</strong></td><td>تنمية اتجاهات إيجابية نحو البيئة والوطن</td><td>تنمية اتجاه المحافظة على النباتات والبيئة</td><td>تأكيد مقاومة الاحتلال وأن نهاية الغزو بالفشل</td></tr>
+<tr><td>6</td><td><strong>الميول والاهتمامات</strong></td><td>رصد ميول الطلاب وتوجيهها</td><td>الميل لتصوير الزهور والاهتمام بالحدائق</td><td>الميل لقراءة التاريخ وتحليل دوافع الأحداث</td></tr>
+<tr><td>7</td><td><strong>التذوق</strong></td><td>تذوق الجمال التربوي والفني</td><td>تذوق تناسق الألوان والتصميم في لوحات الزهور</td><td>تذوق جماليات ملابس الجنود في معركة أبي قير</td></tr>
+<tr><td>8</td><td><strong>تقدير الجهد الإنساني</strong></td><td>تقدير جهود العلماء والشعوب</td><td>تقدير جهود العلماء في التصنيف والتقسيم العلمي</td><td>تقدير كفاح الشعب المصري وجهود علماء الحملة</td></tr>
+<tr><td>9</td><td><strong>أساليب إعداد التقويم</strong></td><td>أسئلة، طلبات، تقارير، تدريبات</td><td>أسئلة تقويمية، تقييم تقارير التشريح، تدريبات رسم</td><td>أسئلة تقويمية، خرائط خط السير، تدريبات</td></tr>
+<tr><td>10</td><td><strong>مصادر ومراجع التعلم</strong></td><td>الكتب، المكتبة، المتاحف، الحدائق</td><td>كتاب العلوم، حديقة المدرسة، المراجع، المتاحف</td><td>كتاب التاريخ، المكتبة، المراجع التاريخية</td></tr>
+<tr><td>11</td><td><strong>الوسائل والأنشطة</strong></td><td>رسم واستخدام الوسائل التعليمية</td><td>زهرة حقيقية، لوحات تعليمية، فحص كتب وصور</td><td>خرائط، صور الحملة، مجسم حجر رشيد</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<!-- ===== 4. PROCESSING METHODOLOGY ===== -->
+<div class="sb">
+<h4><span class="ico">◆</span> طريقة معالجة كراس التحضير: المنهجية الثلاثية المراحل</h4>
+<p>معالجة الكراس ليست كتابةً لمرة واحدة، بل دورة عمل من ثلاث مراحل متكاملة تسبق الحصة وتصاحبها وتليها:</p>
+<div class="sgrid">
+<div class="scard" style="--sc:#2563eb">
+<h4><span class="ico">◆</span> المرحلة الأولى: التحضير القبلي (قبل الحصة)</h4>
+<p><span class="sl">① تحليل محتوى الدرس:</span> تحديد المفاهيم المحورية والمهارات والقيم المتضمنة، وتفكيك المركب إلى عناصر أولية.</p>
+<p><span class="sl">② تحليل المتعلمين:</span> الخبرات السابقة، الفروق الفردية، الميول المتوقعة، والمستوى العقلي.</p>
+<p><span class="sl">③ صياغة المشكلة والأهداف:</span> سؤال إشكالي محرك، ثم أهداف سلوكية محاذية للأبعاد السبعة ومستويات بلوم.</p>
+<p><span class="sl">④ اختيار الاستراتيجية والوسائل:</span> ملاءمة الطريقة لطبيعة الهدف، وحصر الوسائل المتوفرة فعلاً.</p>
+<p><span class="sl">⑤ تصميم التقويم وتوزيع الزمن:</span> أداة قياس لكل هدف، وتوزيع دقائق الحصة على مراحل الاستراتيجية.</p>
+</div>
+<div class="scard" style="--sc:#059669">
+<h4><span class="ico">◆</span> المرحلة الثانية: المعالجة الصفية (أثناء الحصة)</h4>
+<p><span class="sl">① المرونة التنفيذية:</span> الكراس خطة عمل مرنة تتلاءم مع متغيرات الموقف الصفي واستجابات التلاميذ الواقعية، لا قيداً جامداً.</p>
+<p><span class="sl">② التقويم التكويني اللحظي:</span> أسئلة تشخيصية أثناء الشرح تكشف الفهم أولاً بأول وتعدل المسار فوراً.</p>
+<p><span class="sl">③ إدارة الزمن:</span> الالتزام بالتوزيع المخطط مع هامش مرن للطوارئ، وتقليل زمن الهدر لصالح الوقت الصافي للتعلم.</p>
+<p><span class="sl">④ توثيق الملاحظات الحية:</span> تسجيل سريع في هامش الكراس لكل موقف غير متوقع أو استجابة مميزة أو خلل طارئ.</p>
+</div>
+<div class="scard" style="--sc:#c9a84c">
+<h4><span class="ico">◆</span> المرحلة الثالثة: التأمل والمراجعة (بعد الحصة)</h4>
+<p><span class="sl">① التقويم الذاتي:</span> مقارنة النتائج الفعلية بالأهداف المصاغة: أي الأهداف تحقق؟ وأيها تعثر؟ ولماذا؟</p>
+<p><span class="sl">② تحليل التغذية الراجعة:</span> استثمار ملاحظات المشرف الجامعي ومدير المدرسة والمدرس المتعاون كأدوات حوار بناء لا عقاب.</p>
+<p><span class="sl">③ التعديل التراكمي:</span> تنقيح الكراس للدرس التالي: تعديل المشكلة، إعادة صياغة هدف متعثر، استبدال وسيلة فاشلة، تنويع الاستراتيجية.</p>
+<p><span class="sl">④ الأرشفة المهنية:</span> الكراس المنقح يصبح سجلاً للنمو المهني يُستشهد به في ملف الإنجاز والمقابلة المهنية.</p>
+</div>
+</div>
+<div class="cmap" style="margin-top:.5rem">
+<h4><span class="ico">◈</span> حلقة المعالجة: خطّط ← نفّذ ← قوّم ← تأمل ← نقّح</h4>
+<div class="mflow">
+<span class="mnode">التخطيط القبلي</span><span class="marr">‹</span>
+<span class="mnode">التنفيذ المرن</span><span class="marr">‹</span>
+<span class="mnode c">التقويم والتأمل</span><span class="marr">›</span>
+<span class="mnode">التنقيح التراكمي</span><span class="marr">⟲</span>
+<span class="mnode">تخطيط مطوّر</span>
+</div>
+</div>
+</div>
+
+<!-- ===== 5. QUALITY CRITERIA ===== -->
+<div class="sb">
+<h4><span class="ico">◆</span> معايير جودة كراس التحضير (قائمة تحقق تفاعلية)</h4>
+<p>اضغط على كل معيار لتحققه ذاتياً بعد إنجاز تحضيرك — المعايير الثمانية التالية هي ما يبحث عنه المقيمون الميدانيون الثلاثة:</p>
+<ul class="chk" id="chkList">
+<li onclick="tchk(this)"><input type="checkbox" readonly> <span><strong>الاكتمال والشمول:</strong> تغطية البنود الأحد عشر دون حذف الأبعاد الوجدانية والمهارية.</span></li>
+<li onclick="tchk(this)"><input type="checkbox" readonly> <span><strong>سلوكية الأهداف:</strong> كل هدف بفعل ملحوظ قابل للقياس (يحدد، يقارن، يرسم) لا فعل باطني.</span></li>
+<li onclick="tchk(this)"><input type="checkbox" readonly> <span><strong>المحاذاة البنائية:</strong> تطابق تام بين الهدف ← النشاط ← أداة التقويم.</span></li>
+<li onclick="tchk(this)"><input type="checkbox" readonly> <span><strong>تنويع مستويات بلوم:</strong> عدم حبس الأهداف والتقويم في مستوى التذكر والفهم.</span></li>
+<li onclick="tchk(this)"><input type="checkbox" readonly> <span><strong>واقعية الوسائل:</strong> وسائل متوفرة وسليمة ومسجلة في بندها وتخدم الهدف الرئيسي.</span></li>
+<li onclick="tchk(this)"><input type="checkbox" readonly> <span><strong>مراعاة الفروق الفردية:</strong> أنشطة وأسئلة متدرجة تلامس مستويات المتعلمين المختلفة.</span></li>
+<li onclick="tchk(this)"><input type="checkbox" readonly> <span><strong>التوزيع الزمني:</strong> دقائق الحصة موزعة على مراحل الاستراتيجية بهامش مرن.</span></li>
+<li onclick="tchk(this)"><input type="checkbox" readonly> <span><strong>أثر التأمل:</strong> وجود تنقيحات موثقة بعد كل حصة تدل على أن الكراس وثيقة حية.</span></li>
+</ul>
+</div>
+
+<!-- ===== 6. COMMON ERRORS ===== -->
+<div class="sb">
+<h4><span class="ico">◆</span> الأخطاء الشائعة في إعداد الكراس ومعالجاتها</h4>
+<div class="tw">
+<table>
+<thead><tr><th>الخطأ الشائع</th><th>أثره الميداني</th><th>المعالجة الهندسية</th></tr></thead>
+<tbody>
+<tr><td><strong>النسخ الشكلي من كراسات سابقة</strong></td><td>تحضير لا يعكس محتوى الدرس الفعلي ولا متعلميه</td><td>بناء كل درس من تحليل محتواه ومتعلميه، واستخدام النماذج السابقة كهياكل استرشادية فقط</td></tr>
+<tr><td><strong>أهداف غير قابلة للقياس</strong></td><td>استحالة التقويم، وضياع معيار النجاح</td><td>استبدال الأفعال الباطنية (يفهم/يدرك) بأفعال سلوكية (يعدد/يقارن/يرسم) مع شرط ومعيار</td></tr>
+<tr><td><strong>انفصال التقويم عن الأهداف</strong></td><td>قياس ما لم يُستهدف، وتعليم ما لم يُقَس</td><td>جدول محاذاة: لكل هدف صف مستقل يضم نشاطه وأداة قياسه</td></tr>
+<tr><td><strong>حشو المحتوى فوق زمن الحصة</strong></td><td>ارتجال وحذف عشوائي أثناء التنفيذ</td><td>قاعدة الأولوية: مفهوم محوري واحد + مفاهيم مساندة، وتوزيع زمني بهامش مرن</td></tr>
+<tr><td><strong>إهمال الفروق الفردية</strong></td><td>ملل المتفوقين وإحباط المتعثرين</td><td>أسئلة وأنشطة متدرجة المستويات، ومهام إثرائية للمتميزين ودعمية للمتعثرين</td></tr>
+<tr><td><strong>الجمود التنفيذي على الخطة</strong></td><td>تجاهل استجابات التلاميذ الواقعية</td><td>اعتماد الكراس خطة مرنة: بنود بديلة جاهزة لكل احتمال صفي</td></tr>
+<tr><td><strong>وسائل مسجلة دون تحقق</strong></td><td>تعطل الحصة وارتباك المعلم</td><td>قاعدة الفحص القبلي: تجربة كل وسيلة وتسجيل بديل احتياطي في الكراس</td></tr>
+<tr><td><strong>غياب صفحة التأمل</strong></td><td>تكرار الأخطاء ذاتها طوال فترة التربية العملية</td><td>تخصيص هامش ثابت بعد كل حصة: ما تحقق، ما تعثر، ما سيُنقح</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<!-- ===== 7. FULL APPLIED MODEL ===== -->
+<div class="sb">
+<h4><span class="ico">◆</span> النموذج التطبيقي الكامل: حصة علوم «الزهرة وتركيبها»</h4>
+<div class="tw">
+<table>
+<thead><tr><th>عنصر التحضير</th><th>المحتوى التنفيذي المكتوب في الكراس</th></tr></thead>
+<tbody>
+<tr><td><span class="bg bg-b">المشكلة</span></td><td>بعد ملاحظة زهرة حقيقية: «كيف تتكاثر النباتات الزهرية؟ ولماذا تختلف ألوان بتلاتها وأشكالها؟»</td></tr>
+<tr><td><span class="bg bg-g">الأهداف</span></td><td>معرفي: أن يعدد الطالب أجزاء الزهرة الكاملة ووظيفة كل جزء. مهاري: أن يشريح الزهرة ويرسم أجزاءها بدقة 80%. وجداني: أن يبدي اتجاهاً إيجابياً نحو المحافظة على النباتات.</td></tr>
+<tr><td><span class="bg bg-y">الاستراتيجية</span></td><td>الاستقراء ثم القياس (ببنية هربرطية): تمهيد بالملاحظة ← عرض زهور متنوعة ← ربط ومقارنة ← تعميم التركيب ← تطبيق على زهرة جديدة.</td></tr>
+<tr><td><span class="bg bg-p">الوسائل</span></td><td>زهور حقيقية متنوعة، عدسات مكبرة، لوحات تشريحية، عرض ضوئي لشرائح مجهرية — مرتبطة بأسئلة محددة في الكراس.</td></tr>
+<tr><td><span class="bg bg-r">التقويم</span></td><td>تكويني: أسئلة تحليلية أثناء المقارنة. ختامي: رسم تشريحي مُقيَّم بقائمة شطب، وسؤال تعليلي: «ماذا يحدث للنبات لو غابت الأسدية؟»</td></tr>
+<tr><td><span class="bg bg-b">الزمن</span></td><td>تمهيد ومشكلة (5 د) ← عرض وملاحظة (10 د) ← ربط ومقارنة (10 د) ← تعميم (7 د) ← تشريح وتطبيق (8 د) ← تقويم ختامي (5 د).</td></tr>
+<tr><td><span class="bg bg-g">التأمل (بعد الحصة)</span></td><td>تحقق الهدف المعرفي والمهاري لدى 85%؛ تعثر بعضهم في تمييز الكرابل ← يُنقح: إضافة مجسم مقارن في الدرس التالي.</td></tr>
+</tbody>
+</table>
+</div>
 </div>
 
 <div class="co co-ok">
 <div class="co-i"><span class="ico">◈</span></div>
 <div>
 <h5>الخلاصة التنفيذية</h5>
-<p>كراس التحضير ليس مجرد دفتر لتدوين المعلومات، بل هو الأداة الهندسية التي تترجم التعلم الحقيقي إلى إجراءات صفية متكاملة. كل بند من البنود الأحد عشر يمثل لبنة في بناء موقف تعليمي فعّال يضمن ديمومة الأثر وقابلية التوظيف.</p>
+<p>كراس التحضير ليس مجرد دفتر لتدوين المعلومات، بل هو الأداة الهندسية التي تترجم التعلم الحقيقي إلى إجراءات صفية متكاملة. كل بند من البنود الأحد عشر لبنة في بناء موقف تعليمي فعال، وكل دورة من دورات (خطّط ← نفّذ ← قوّم ← تأمل ← نقّح) خطوة في مسار النمو المهني المستدام الذي يضمن ديمومة الأثر وقابلية التوظيف لدى المتعلم.</p>
 </div>
 </div>
 </div>
@@ -803,7 +996,6 @@ body{background:#fff}
 <div class="panel">
 <div class="ptitle"><div class="ico-box"><span class="ico">◉</span></div> استثمار تكنولوجيا التعليم والوسائل وتطوير زمن الأداء</div>
 <div class="psub">التطور التاريخي، تصنيف الوسائل، وشروط العرض الضوئي</div>
-
 <div class="co co-info">
 <div class="co-i"><span class="ico">◈</span></div>
 <div>
@@ -811,18 +1003,16 @@ body{background:#fff}
 <p>إن تنوع استراتيجيات التدريس يتطلب استثمار تكنولوجيا التعليم والوسائل التعليمية لتجسيد المفاهيم ونقلها من التجريد اللفظي إلى الإدراك الحسي المباشر. تعدّ تقنيات التعليم الحديثة ووسائله الجسر الذي يتخطى حواجز الزمان والمكان والإمكانات البشرية والمادية؛ فهي ليست مجرد أدوات تكميلية أو وسائل ترفيه في الصف، بل هي عناصر جوهرية لتقليل اللفظية العقيمة، وتوفير الأساس المادي للتفكير، وتقريب مستويات الخبرة للدارسين.</p>
 </div>
 </div>
-
 <div class="sb">
 <h4><span class="ico">◆</span> التطور التاريخي لوسائل نقل المعرفة</h4>
 <div class="tline">
-<div class="tli"><h5>① النقش والرموز (البدائية)</h5><p>استخدام النار للطبول والإشارات والرموز للإرسال.</p></div>
+<div class="tli"><h5>① النقش والرموز (البدائية)</h5><p>استخدام النار والطبول والإشارات والرموز للإرسال.</p></div>
 <div class="tli"><h5>② الكتابة (البردي والنقش)</h5><p>اختراع الكتابة المصرية القديمة، استخدام أوراق البردي، والنقش على جدران المعابد.</p></div>
 <div class="tli"><h5>③ جلود الحيوان (عند الرومان)</h5><p>انتقال استخدام وسائل الكتابة إلى جلود الحيوان والرقائق، كحلقة تاريخية حاسمة قبل اختراع الورق المطبوع.</p></div>
 <div class="tli"><h5>④ الطباعة والكتاب المطبوع</h5><p>ظهور الكتاب المطبوع كأحد أهم الوسائل التعليمية الممتدة عبر العصور.</p></div>
 <div class="tli"><h5>⑤ التكنولوجيا المعاصرة</h5><p>الوسائل السمعية والبصرية التي تستثير حواس المتعلم كاملة.</p></div>
 </div>
 </div>
-
 <div class="sb">
 <h4><span class="ico">◆</span> تصنيف وسائل الإيضاح وتوظيفها (حسب القرب من الخبرة)</h4>
 <div class="tw">
@@ -836,19 +1026,16 @@ body{background:#fff}
 </table>
 </div>
 </div>
-
 <div class="sb">
 <h4><span class="ico">◆</span> شروط العرض الضوئي والإلكتروني لخفض منحنى النسيان</h4>
-<p>لضمان تحسين زمن الأداء ورفع معدلات الاستبقاء عبر وسائل العرض الضوئي، يُشترط:</p>
 <div class="nsteps">
-<div class="nstep"><div><h5>إعداد الغرفة الصفية</h5><p>تظليمها بشكل متوازن يسمح بالملاحظة وتسجيل النقاط.</p></div></div>
+<div class="nstep"><div><h5>إعداد الغرفة الصفية</h5><p>تظليلها بشكل متوازن يسمح بالملاحظة وتسجيل النقاط.</p></div></div>
 <div class="nstep"><div><h5>التأكد من سلامة الأجهزة والشرائح</h5><p>قبل بدء الحصة لتجنب الانقطاع والتشتت.</p></div></div>
 <div class="nstep"><div><h5>ربط المادة المصورة بأسئلة محددة</h5><p>في كراس التحضير تجعل مشاهدة الفيلم أو الشريحة نشاطاً تفاعلياً وليس متعة سلبية.</p></div></div>
 </div>
 </div>
-
 <div class="sb">
-<h4><span class="ico">◆</span> أسباب فشل استخدام الوسائل التعليمية (المشكلات والمعالجة)</h4>
+<h4><span class="ico">◆</span> أسباب فشل استخدام الوسائل التعليمية</h4>
 <ul class="fl w">
 <li><span class="ico">◆</span> غياب الصيانة الدورية للأجهزة وتلف الأدوات</li>
 <li><span class="ico">◆</span> عدم توفر الوسيلة في المدرسة أو صعوبة الحصول عليها في الوقت المناسب</li>
@@ -856,7 +1043,6 @@ body{background:#fff}
 <li><span class="ico">◆</span> استخدام الوسيلة لغير هدفها أو لمجرد إشغال وقت المعلم أو للترفيه فقط</li>
 </ul>
 </div>
-
 <div class="sb">
 <h4><span class="ico">◆</span> القائمة الإرشادية للمعلم في توظيف الوسائل</h4>
 <div class="nsteps">
@@ -875,7 +1061,6 @@ body{background:#fff}
 <div class="panel">
 <div class="ptitle"><div class="ico-box"><span class="ico">▣</span></div> منظومة التقويم الميداني وأدوات قياس أداء الطالب المعلم</div>
 <div class="psub">المقييمون الثلاثة، محاور بطاقات التقييم، والتوجيهات الختامية</div>
-
 <div class="co co-info">
 <div class="co-i"><span class="ico">◈</span></div>
 <div>
@@ -883,15 +1068,12 @@ body{background:#fff}
 <p>إن التقويم في التربية العملية ليس مجرد إجراء شكلي لمنح الدرجات، بل هو منظومة تشخيصية وتطويرية مستمرة تهدف إلى قياس نمو الطالب المعلم، وتحديد جوانب القوة والضعف في أدائه التدريسي، وتوفير التغذية الراجعة التي توجهه نحو بناء معلم محترف.</p>
 </div>
 </div>
-
 <div class="sb">
 <h4><span class="ico">◆</span> التمايز الوظيفي للمقيّمين الميدانيين الثلاثة</h4>
-<p>تعتمد التربية العملية على ثلاثة أطراف إشرافية تتكامل أدوارها لتقويم الطالب المعلم:</p>
 <div class="sgrid">
 <div class="scard" style="--sc:#2563eb">
 <h4><span class="ico">◆</span> المشرف الجامعي</h4>
 <p><span class="sl">البعد:</span> التربوي والنظري</p>
-<p><span class="sl">يركز على:</span></p>
 <ul class="fl" style="font-size:.78em">
 <li><span class="ico">✓</span> مدى ملاءمة الأهداف السلوكية وصياغتها في كراس التحضير</li>
 <li><span class="ico">✓</span> مدى اتساق استراتيجية التدريس المتبعة مع النظريات التربوية</li>
@@ -901,7 +1083,6 @@ body{background:#fff}
 <div class="scard" style="--sc:#059669">
 <h4><span class="ico">◆</span> مدير المدرسة</h4>
 <p><span class="sl">البعد:</span> الإداري والسلوكي العام</p>
-<p><span class="sl">يركز على:</span></p>
 <ul class="fl" style="font-size:.78em">
 <li><span class="ico">✓</span> مدى التزام الطالب المعلم بلوائح المدرسة</li>
 <li><span class="ico">✓</span> الانضباط المدرسي والمواعيد</li>
@@ -911,7 +1092,6 @@ body{background:#fff}
 <div class="scard" style="--sc:#c9a84c">
 <h4><span class="ico">◆</span> المدرس المتعاون</h4>
 <p><span class="sl">البعد:</span> الأداء الصفي اليومي المباشر</p>
-<p><span class="sl">يركز على:</span></p>
 <ul class="fl" style="font-size:.78em">
 <li><span class="ico">✓</span> كيفية إدارة الفصل والتعامل المباشر مع مشكلات التلاميذ</li>
 <li><span class="ico">✓</span> دقة استخدام الأدوات والوسائل التعليمية</li>
@@ -920,10 +1100,8 @@ body{background:#fff}
 </div>
 </div>
 </div>
-
 <div class="sb">
 <h4><span class="ico">◆</span> بنود ومحاور بطاقة التقييم الميداني</h4>
-<p>تجمع استمارات التقويم الميداني بين ثلاثة محاور رئيسية:</p>
 <div class="acc">
 <div class="acc-i"><div class="acc-h" onclick="tacc(this)">① المحور الأول: التخطيط وإعداد كراس التحضير <span class="ai">▾</span></div><div class="acc-b"><div class="acc-bi">
 <ul class="fl">
@@ -934,32 +1112,29 @@ body{background:#fff}
 </div></div></div>
 <div class="acc-i"><div class="acc-h" onclick="tacc(this)">② المحور الثاني: الأداء والتنفيذ الصفي <span class="ai">▾</span></div><div class="acc-b"><div class="acc-bi">
 <ul class="fl">
-<li><span class="ico">✓</span> <strong>أساليب الإلقاء والمناقشة:</strong> استخدام لغة فصيحة وواضحة، نبرات صوت متغيرة، وإتاحة الفرصة للتلاميذ للإلقاء والإجابة عن الأسئلة داخل الفصل وخارجه</li>
-<li><span class="ico">✓</span> <strong>استخدام وسائل الإيضاح:</strong> السبورة وفعاليتها، تنسيق استخدام الوسائل التعليمية وتأثيرها الملموس في الموقف التعليمي</li>
-<li><span class="ico">✓</span> <strong>إدارة الفصل والانضباط:</strong> الحساسية لمشكلات التلاميذ، مراعاة مشاعرهم، والقدرة على السيطرة المتزنة مع مراعاة احتياجاتهم الخاصة كأفراد</li>
+<li><span class="ico">✓</span> <strong>أساليب الإلقاء والمناقشة:</strong> لغة فصيحة واضحة، نبرات صوت متغيرة، وإتاحة الفرصة للتلاميذ للإلقاء والإجابة</li>
+<li><span class="ico">✓</span> <strong>استخدام وسائل الإيضاح:</strong> السبورة وفعاليتها، تنسيق استخدام الوسائل التعليمية وتأثيرها الملموس</li>
+<li><span class="ico">✓</span> <strong>إدارة الفصل والانضباط:</strong> الحساسية لمشكلات التلاميذ، والسيطرة المتزنة مع مراعاة احتياجاتهم كأفراد</li>
 </ul>
 </div></div></div>
 <div class="acc-i"><div class="acc-h" onclick="tacc(this)">③ المحور الثالث: الأنشطة والمعامل (للتخصصات العلمية) <span class="ai">▾</span></div><div class="acc-b"><div class="acc-bi">
 <ul class="fl">
 <li><span class="ico">✓</span> وضوح أهداف التجارب العملية وعلاقتها بالخطوات التنفيذية</li>
 <li><span class="ico">✓</span> إبراز العلاقة التكاملية بين التجارب العملية والمادة النظرية</li>
-<li><span class="ico">✓</span> دقة ووضوح التعليمات الموجهة للتلاميذ أثناء إجراء التجارب في المعمل لضمان السلامة والإنجاز</li>
+<li><span class="ico">✓</span> دقة ووضوح التعليمات الموجهة للتلاميذ أثناء التجارب لضمان السلامة والإنجاز</li>
 </ul>
 </div></div></div>
 </div>
 </div>
-
 <div class="sb">
 <h4><span class="ico">◆</span> التوجيهات الختامية التربوية للتربية العملية</h4>
-<p>لضمان تحويل فترة التربية العملية إلى خبرة نمو مهني مستدامة، يوصى بالالتزام بالتوجيهات التنفيذية التالية:</p>
 <div class="nsteps">
-<div class="nstep"><div><h5>توثيق العلاقة الإنسانية</h5><p>بناء التربية العملية على أنها علاقة "إنسان بإنسان" بين المشرف والطالب المعلم والتلميذ، حيث يتعلم الجميع في مواقف متجددة.</p></div></div>
-<div class="nstep"><div><h5>استمرارية التغذية الراجعة</h5><p>استخدام استمارات التقويم كأدوات للحوار والمناقشة البناءة بين الطالب والمشرف عقب كل حصة، وليس كأدوات لفرض العقوبات.</p></div></div>
-<div class="nstep"><div><h5>المرونة في التخطيط</h5><p>النظر إلى كراس التحضير كخطة عمل مرنة تتلاءم مع متغيرات الموقف الصفي واستجابات التلاميذ الواقعية.</p></div></div>
-<div class="nstep"><div><h5>التكامل المؤسسي</h5><p>تفعيل التعاون المباشر بين كليات التربية والمدارس الميدانية لتقليل الفجوة بين النظرية التربوية والتطبيق الصفي الفعلي.</p></div></div>
+<div class="nstep"><div><h5>توثيق العلاقة الإنسانية</h5><p>بناء التربية العملية على أنها علاقة "إنسان بإنسان" بين المشرف والطالب المعلم والتلميذ.</p></div></div>
+<div class="nstep"><div><h5>استمرارية التغذية الراجعة</h5><p>استخدام استمارات التقويم كأدوات للحوار البناء عقب كل حصة، لا كأدوات لفرض العقوبات.</p></div></div>
+<div class="nstep"><div><h5>المرونة في التخطيط</h5><p>النظر إلى كراس التحضير كخطة عمل مرنة تتلاءم مع متغيرات الموقف الصفي.</p></div></div>
+<div class="nstep"><div><h5>التكامل المؤسسي</h5><p>تفعيل التعاون بين كليات التربية والمدارس الميدانية لتقليل الفجوة بين النظرية والتطبيق.</p></div></div>
 </div>
 </div>
-
 <div class="cmap">
 <h4><span class="ico">◈</span> منظومة التقويم الميداني الثلاثية</h4>
 <div class="mflow">
@@ -981,15 +1156,13 @@ body{background:#fff}
 <div class="panel">
 <div class="ptitle"><div class="ico-box"><span class="ico">◑</span></div> خصائص المعلم الناجح ومحددات التقييم</div>
 <div class="psub">خمس وعشرون صفة جوهرية مقسمة إلى ثلاث فئات</div>
-
 <div class="co co-info">
 <div class="co-i"><span class="ico">◈</span></div>
 <div>
 <h5>الأساس البحثي</h5>
-<p>أثبتت البحوث الميدانية التربوية والمتخصصة في الصفات النوعية للتلاميذ أن هناك صفات جوهرية تحدد المعلم الجيد والمحبوب (تصل إلى 25 صفة محددة في الدراسات الميدانية)، ويمكن تبويب أبرزها على النحو التالي:</p>
+<p>أثبتت البحوث الميدانية التربوية أن هناك صفات جوهرية تحدد المعلم الجيد والمحبوب (تصل إلى 25 صفة محددة في الدراسات الميدانية)، ويمكن تبويب أبرزها على النحو التالي:</p>
 </div>
 </div>
-
 <div class="sb">
 <h4><span class="ico">◆</span> الفئة الأولى: الصفات الرئيسية الأكثر تأثيراً (ميدانياً)</h4>
 <div class="tw">
@@ -1002,37 +1175,34 @@ body{background:#fff}
 </table>
 </div>
 </div>
-
 <div class="sb">
 <h4><span class="ico">◆</span> الفئة الثانية: الصفات الشخصية والذاتية الحاكمة</h4>
 <div class="tw">
 <table>
 <thead><tr><th>الصفة</th><th>الوصف التفصيلي</th></tr></thead>
 <tbody>
-<tr><td><span class="bg bg-y">المحافظة على المواعيد (Punctuality)</span></td><td>الانضباط الزمني الدقيق في الحضور وإدارة وقت الحصة.</td></tr>
-<tr><td><span class="bg bg-y">قوة الإرادة (Willpower)</span></td><td>القدرة على الحزم واتخاذ القرارات المتوازنة.</td></tr>
-<tr><td><span class="bg bg-y">وضوح الصوت (Voice Clarity)</span></td><td>استخدام نبرات صوت واضحة وفصيحة ومتغيرة وفقاً للموقف.</td></tr>
-<tr><td><span class="bg bg-y">الحماس (Enthusiasm)</span></td><td>الحيوية والشغف وإثارة فضول الطلاب بالمعرفة.</td></tr>
-<tr><td><span class="bg bg-y">الصحة والحيوية (Health & Vigor)</span></td><td>التمتع باللياقة البدنية والنشاط والحيوية الصفية.</td></tr>
+<tr><td><span class="bg bg-y">المحافظة على المواعيد</span></td><td>الانضباط الزمني الدقيق في الحضور وإدارة وقت الحصة.</td></tr>
+<tr><td><span class="bg bg-y">قوة الإرادة</span></td><td>القدرة على الحزم واتخاذ القرارات المتوازنة.</td></tr>
+<tr><td><span class="bg bg-y">وضوح الصوت</span></td><td>استخدام نبرات صوت واضحة وفصيحة ومتغيرة وفقاً للموقف.</td></tr>
+<tr><td><span class="bg bg-y">الحماس</span></td><td>الحيوية والشغف وإثارة فضول الطلاب بالمعرفة.</td></tr>
+<tr><td><span class="bg bg-y">الصحة والحيوية</span></td><td>التمتع باللياقة البدنية والنشاط والحيوية الصفية.</td></tr>
 <tr><td><span class="bg bg-y">حسن المظهر</span></td><td>الأناقة والنظافة والجاذبية الشخصية.</td></tr>
 </tbody>
 </table>
 </div>
 </div>
-
 <div class="sb">
 <h4><span class="ico">◆</span> الفئة الثالثة: الصفات المهنية والسلوكية الداعمة</h4>
 <ul class="fl g">
 <li><span class="ico">◆</span> عدم التحيز والمساواة في معاملة التلاميذ</li>
 <li><span class="ico">◆</span> مراعاة النظام والانضباط الصفي القائم على الاحترام المتبادل</li>
-<li><span class="ico">◆</span> الإمامة التامة بالمادة الدراسية وسعة الأفق المعرفي</li>
+<li><span class="ico">◆</span> الإلمام التام بالمادة الدراسية وسعة الأفق المعرفي</li>
 <li><span class="ico">◆</span> العدالة والدقة في تصحيح الاختبارات ووضع التقديرات</li>
 <li><span class="ico">◆</span> التمتع بروح الفكاهة والمرح المتزن لكسر جمود الصف</li>
 <li><span class="ico">◆</span> القدرة على جلب انتباه التلاميذ والحفاظ على دافعيتهم</li>
 <li><span class="ico">◆</span> ضبط النفس والاتزان الانفعالي والهدوء في مواجهة المواقف الصعبة</li>
 </ul>
 </div>
-
 <div class="chbox">
 <div class="chtitle"><span class="ico">◈</span> توزيع الصفات حسب الفئات</div>
 <div class="bchart">
@@ -1041,7 +1211,6 @@ body{background:#fff}
 <div class="bitem"><div class="bfill" style="height:100%;background:linear-gradient(to top,#2563eb,#93c5fd)"><span class="bv">7+</span></div><div class="blabel">صفات مهنية</div></div>
 </div>
 </div>
-
 <div class="cmap">
 <h4><span class="ico">◈</span> مثلث المعلم الناجح</h4>
 <div class="mflow">
@@ -1071,7 +1240,6 @@ body{background:#fff}
 </div>
 
 <script>
-// ===== NAVIGATION =====
 function go(id){
 document.querySelectorAll('.sec').forEach(s=>s.classList.remove('on'));
 document.getElementById('s-'+id).classList.add('on');
@@ -1083,24 +1251,23 @@ if(id==='home')hb.classList.add('on');else hb.classList.remove('on');
 window.scrollTo({top:0,behavior:'smooth'});
 upbar();
 }
-
-// ===== STRATEGY TABS =====
 function ss(id,btn){
 document.querySelectorAll('#stabs .itab').forEach(t=>t.classList.remove('on'));
 btn.classList.add('on');
 document.querySelectorAll('.ic').forEach(c=>c.classList.remove('on'));
 document.getElementById('st-'+id).classList.add('on');
 }
-
-// ===== ACCORDION =====
 function tacc(h){
 var it=h.parentElement;
 var wasOpen=it.classList.contains('open');
 it.parentElement.querySelectorAll('.acc-i').forEach(i=>i.classList.remove('open'));
 if(!wasOpen)it.classList.add('open');
 }
-
-// ===== PROGRESS BAR =====
+function tchk(li){
+var cb=li.querySelector('input');
+cb.checked=!cb.checked;
+li.classList.toggle('done',cb.checked);
+}
 function upbar(){
 var st=window.scrollY;
 var dh=document.documentElement.scrollHeight-window.innerHeight;
@@ -1108,8 +1275,6 @@ var p=dh>0?(st/dh)*100:0;
 document.getElementById('pbar').style.width=p+'%';
 }
 window.addEventListener('scroll',upbar);
-
-// ===== KEYBOARD NAV =====
 document.addEventListener('keydown',function(e){
 var secs=['home','intro','learn','obj','strat','prep','tech','eval','teach'];
 var cur=document.querySelector('.sec.on').id.replace('s-','');
@@ -1118,8 +1283,6 @@ if(e.key==='ArrowLeft'&&idx<secs.length-1)go(secs[idx+1]);
 else if(e.key==='ArrowRight'&&idx>0)go(secs[idx-1]);
 else if(e.key==='Home')go('home');
 });
-
-// ===== ANIMATE BARS ON SCROLL =====
 var obs=new IntersectionObserver(function(entries){
 entries.forEach(function(en){
 if(en.isIntersecting){
@@ -1129,41 +1292,23 @@ en.target.querySelectorAll('.bfill').forEach(function(b){b.style.height=b.style.
 },{threshold:0.3});
 document.querySelectorAll('.chbox').forEach(function(b){obs.observe(b);});
 
-// ===== DYNAMIC FONT SIZE CONTROL =====
-var currentFS=16; // الحجم الافتراضي بالبكسل
-var minFS=12; // الحد الأدنى
-var maxFS=28; // الحد الأقصى
-var stepFS=2; // مقدار الخطوة
-
-function changeFS(delta){
-var newFS=currentFS+delta;
-if(newFS<minFS)newFS=minFS;
-if(newFS>maxFS)newFS=maxFS;
-if(newFS===currentFS)return;
-currentFS=newFS;
-applyFS();
+var currentFS=16,minFS=12,maxFS=28;
+function changeFS(d){
+var n=currentFS+d;
+if(n<minFS)n=minFS; if(n>maxFS)n=maxFS;
+if(n===currentFS)return;
+currentFS=n; applyFS();
 }
-
-function resetFS(){
-currentFS=16;
-applyFS();
-}
-
+function resetFS(){currentFS=16;applyFS();}
 function applyFS(){
 document.documentElement.style.setProperty('--fs',currentFS+'px');
-var pct=Math.round((currentFS/16)*100);
-document.getElementById('fsLabel').textContent=pct+'%';
+document.getElementById('fsLabel').textContent=Math.round((currentFS/16)*100)+'%';
 try{localStorage.setItem('edu_fs',currentFS);}catch(e){}
 }
-
-// استرجاع الحجم المحفوظ عند فتح الصفحة
 (function(){
 try{
-var saved=localStorage.getItem('edu_fs');
-if(saved){
-var val=parseInt(saved);
-if(val>=minFS&&val<=maxFS){currentFS=val;applyFS();}
-}
+var s=localStorage.getItem('edu_fs');
+if(s){var v=parseInt(s);if(v>=minFS&&v<=maxFS){currentFS=v;applyFS();}}
 }catch(e){}
 })();
 </script>
